@@ -8,3 +8,5 @@
 3. push your committed work before closing project
 4. NEVER PUSH CODE THAT CAN BREAK THE PROJECT
 5. Leave meaningful commit messages
+
+Hello new change
