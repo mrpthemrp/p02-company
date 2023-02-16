@@ -85,6 +85,7 @@ a:hover, a:focus{
     text-decoration: underline;
 }
 nav{
+    display: inline-flex;
     margin-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--grey-light);
