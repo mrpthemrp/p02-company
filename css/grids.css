@@ -1,36 +1,36 @@
 /* 2 COLUMN GRID SYSTEM*/
 
-/*https://www.w3schools.com/css/css_grid.asp*/
-.grid-container {
-    display: grid;
-    align-content: center;
-    margin: 3rem;
-    column-gap: 2rem;
-    row-gap: 2rem;
-}
+/*!*https://www.w3schools.com/css/css_grid.asp*!*/
+/*.grid-container {*/
+/*    display: grid;*/
+/*    align-content: center;*/
+/*    margin: 3rem;*/
+/*    column-gap: 2rem;*/
+/*    row-gap: 2rem;*/
+/*}*/
 
-.header-row {
-    margin: 5%;
-    align-content: center;
-}
+/*.header-row {*/
+/*    margin: 5%;*/
+/*    align-content: center;*/
+/*}*/
 
-/*how to use sticky: https://developer.mozilla.org/en-US/docs/Web/CSS/position*/
-.col-nav {
-    grid-column: 1;
-    display: block;
-    position: sticky;
-    top: 15%;
-    height: fit-content;
-    width: fit-content;
-    padding: 0;
-    background-color: #FCFCFC;
-    border-right: solid 0.25rem lightgray;
-    border-bottom: none;
-}
+/*!*how to use sticky: https://developer.mozilla.org/en-US/docs/Web/CSS/position*!*/
+/*.col-nav {*/
+/*    grid-column: 1;*/
+/*    display: block;*/
+/*    position: sticky;*/
+/*    top: 15%;*/
+/*    height: fit-content;*/
+/*    width: fit-content;*/
+/*    padding: 0;*/
+/*    background-color: #FCFCFC;*/
+/*    border-right: solid 0.25rem lightgray;*/
+/*    border-bottom: none;*/
+/*}*/
 
-.col-content {
-    grid-column: 2;
-    width: fit-content;
-}
+/*.col-content {*/
+/*    grid-column: 2;*/
+/*    width: fit-content;*/
+/*}*/
 
 /*  OTHER (RENAME AS NECESSARY) */
