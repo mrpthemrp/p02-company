@@ -50,7 +50,7 @@ p{
 }
 
 .long-text{
-  inline-size: inherit;
+  inline-size: 45rem;
   overflow-wrap: break-word;
 }
 
@@ -85,7 +85,7 @@ p{
     flex-direction: column;
   }
   .navBar-item {
-    font-size: 0.5rem;
+    font-size: 0.25rem;
     width: auto;
     padding: 0.65rem;
     margin-right: 0.25rem;
@@ -97,7 +97,7 @@ p{
 section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
-  border-top: 2px solid rgb(210, 210, 210);
+  border-top: 0.25rem solid rgb(210, 210, 210);
   width: fit-content;
 }
 
@@ -400,6 +400,10 @@ fieldset{
   padding-left: 20px;
 }
 
+.branding-container{
+  flex-direction: row;
+}
+
 .branding-one{
   flex: 1;
 }
@@ -443,6 +447,7 @@ header p{
 
 .header-row {
   margin: 5%;
+  align-content: center;
 }
 
 /*how to use sticky: https://developer.mozilla.org/en-US/docs/Web/CSS/position*/
@@ -456,6 +461,7 @@ header p{
   padding: 0;
   background-color: #FCFCFC;
   border-right: solid 0.25rem lightgray;
+  border-bottom: none;
 }
 
 .col-content {
@@ -467,11 +473,11 @@ header p{
 
 .navBar {
   display: block;
+  padding: 0;
   text-decoration: none;
   align-items: end;
   top: 0;
   list-style-type: none;
-
 }
 
 .navBar a:hover, .navBar a:focus {
