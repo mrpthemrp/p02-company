@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+
+    <!-- Imported Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html"><img src="../img/PK_logo.png" alt="Posterized Kicks Logo" width="268" height="45"></a>
+            <a href="new_releases.html">New Releases</a>
+            <a href="posters.html">Posters</a>
+            <a href="customize.html">Customize</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="about.html">About Us</a>
+            <form>
+                <label>
+                    Search
+                    <input type="text" class="search-bar">
+                </label>
+                <a class="button-nav" href="#">Go</a>
+            </form>
+            <!-- change to a shopping cart logo -->
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+
+    <h3>Checkout</h3>
+
+    <!-- Cart -->
+    <div class="container"></div>
+    <h3>My Cart</h3>
+    <section class="container-checkout">
+        <!-- Cart item 1 -->
+        <div id="product-one">
+            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img src="Jordan1.jpg"
+                    alt="Jordan 1 University Blue" width="175" height="250"></a>
+            <h4>Jordan 1 University Blue Poster</h4>
+            <p class="price">$25</p>
+            <a class="button-nav" href="#">Edit</a>
+            <a class="button-nav" href="#">Delete</a>
+            <a class="button-nav" href="#">Move to Wishlist</a>
+        </div>
+
+        <!-- Cart item 2 -->
+        <div id="product-two">
+            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img
+                    src="NikeDunkLowPandaPigeon.jpg" alt="Nike Dunk Low Panda Pigeon" width="175" height="250"></a>
+            <h4>Nike Dunk Low Panda Pigeon Poster</h4>
+            <p class="price">$25</p>
+            <a class="button-nav" href="#">Edit</a>
+            <a class="button-nav" href="#">Delete</a>
+            <a class="button-nav" href="#">Move to Wishlist</a>
+        </div>
+        <!-- Total amount -->
+        <div id="total">
+            <div>Total: $50</div>
+            <a class="button-nav" href="#">Checkout</a>
+        </div>
+    </section>
+
+    <!-- Payment information -->
+    <h3>Payment Form</h3>
+    <form>
+        <fieldset>
+            <div class="deliveryoptions">
+                <h3>Delivery Options</h3>
+
+                <label>
+                    <input type="radio" name="options" value="option1">Ship
+                </label>
+                <label>
+                    <input type="radio" name="options" value="option2">Pick Up
+                </label>
+            </div>
+
+            <!-- User Information -->
+            <div class="user-info">
+                <label>
+                    First Name
+                    <input type="text" class="search-bar" name="firstname">
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" class="search-bar" name="lastname">
+                </label>
+                <label>
+                    Address
+                    <input type="text" class="search-bar" name="address">
+                </label>
+            </div>
+
+            <!-- Payment Method-->
+            <h3>Payment Method</h3>
+            <div class="paymentmethod">
+                <label>
+                    <input type="radio" name="options" value="option1">Debit or Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="options" value="option2">Paypal
+                </label>
+            </div>
+
+            <!-- Payment Information -->
+            <h3>Payment Information</h3>
+            <div class="payment-info">
+                <label>
+                    Card Number
+                    <input type="text" class="search-bar" name="cardnumber">
+                </label>
+                <label>
+                    CVV
+                    <input type="text" class="search-bar" name="cvv">
+                </label>
+                <label>
+                    Expiration Date
+                    <input type="text" class="search-bar" name="expirydate" size="4">
+                </label>
+            </div>
+            <a class="button-nav" href="#">Pay</a>
+        </fieldset>
+    </form>
+</body>
+
+</html>
