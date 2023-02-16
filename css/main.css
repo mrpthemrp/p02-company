@@ -17,11 +17,13 @@
 }
 
 body {
-    margin: 1rem;
+    margin: auto;
     padding: 2rem;
     align-content: center;
     background-color: var(--white-bkdg);
     font-family: 'Source Sans Pro', sans-serif;
+    width: fit-content;
+
 }
 
 h1{
@@ -86,6 +88,7 @@ a:hover, a:focus{
 }
 nav{
     display: inline-flex;
+    align-items: center;
     margin-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--grey-light);
