@@ -202,13 +202,6 @@ a:focus img {
     border-bottom: 2px solid var(--blue-light);
 }
 
-.search-bar{
-    border-radius: 8px;
-    border-width: 0.25rem;
-    padding: 4px 4px 0 4px;
-    margin-right: 10px;
-}
-
 #search-bar:hover{
     background: #ebebeb32;
 }
