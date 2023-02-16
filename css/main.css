@@ -84,7 +84,7 @@ a{
 }
 
 a:hover, a:focus{
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 nav{
     display: inline-flex;
@@ -105,9 +105,9 @@ nav a{
 }
 
 nav a:hover, nav a:focus{
-    color: var(--blue-light);
+    /* color: var(--blue-light);
     text-decoration: none;
-    border-bottom: 2px solid var(--blue-light);
+    border-bottom: 2px solid var(--blue-light); */
 }
 
 a:hover img{
