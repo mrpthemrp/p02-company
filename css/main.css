@@ -1,10 +1,10 @@
 /* COLOUR CONSTANTS */
 
 :root {
-    --blue-light: var(--blue-light);
+    --blue-light: rgb(16, 115, 255);
     --white-bkdg: #FCFCFC;
-    --grey-light: var(--grey-light);
-    --grey-dark: var(--grey-dark);
+    --grey-light: rgb(210, 210, 210);
+    --grey-dark: rgba(0, 0, 0, 0.217);
     --grey-darkest: rgb(68, 80, 99);
 }
 /*  //  END OF COLOUR CONSTANTS //  */
@@ -17,6 +17,7 @@
 }
 
 body {
+    margin: 1rem;
     padding: 2rem;
     align-content: center;
     background-color: var(--white-bkdg);
@@ -446,6 +447,20 @@ fieldset{
 #poster-brand-img{
     padding-top: 2em;
     flex: 1;
+}
+
+.h1-header, .h1-header:active{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.h1-header:hover{
+    color: var(--grey-dark);
+    text-decoration: none;
+    transition: 0.1s ease-in;
 }
 
 header h1{
