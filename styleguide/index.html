@@ -17,503 +17,508 @@
 
 <body>
 
-    <header>
+    <header class="header-row">
         <h1>Posterized Kicks Style Guide</h1>
-        <nav>
-            <a href="#interactive_elements">Interactive Elements</a>
-            <a href="#text_elements">Text Elements</a>
-            <a href="#combined_elements">Combined Elements</a>
-            <a href="product_listing.html">Product Listing Template</a>
-            <a href="checkout.html">Checkout Template</a>
-            <a href="#citations">Citations</a>
-        </nav>
     </header>
 
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-        <h2>Interactive Elements</h2>
-
-
-        <section class="element">
-            <!-- In-text links -->
-            <h3>In-text link</h3>
-            <p>Get the latest <a href="https://www.nike.com" id="nike">Nike</a> posters today.</p>
-            <p>Get the latest Adidas posters today. <a href="https://www.adidas.com" id="adidas">Learn more ></a></p>
-        </section>
-
-        <section class="element">
-            <!-- Navigation link -->
-            <h3>Navigation Link</h3>
-            <nav>
-                <a href="#home" class="button">Home</a>
-            </nav>
-            <h4>CSS selector:</h4>
-            <p>.button-nav</p>
-
-            <!-- Sample code -->
-            <h4>Sample code:</h4>
-            <code>&lt;a class="button-nav" href="#">Submit&lt;/a&gt;</code>
-
-            <!-- Rendered element -->
-            <h4>Rendered element:</h4>
-            <a class="button-nav" href="#">Submit</a>
-        </section>
-
-
-        <section class="element">
-            <!-- Submit/Reset Buttons -->
-            <h3>Submit/Reset Buttons</h3>
-            <!-- This code is referenced from the example from the sample code given above -->
-            <a class="button-nav" href="#">Submit</a>
-            <a class="button-nav" href="#">Reset</a>
-        </section>
-
-        <section class="container-two">
-
-            <!-- I figured this out from https://www.w3schools.com/tags/att_input_type_text.asp -->
-            <div class="sample">
-                <!-- Text Input Field with Label -->
-                <h3>Text Input Field with Label</h3>
-                <h4>Sample code:</h4>
-                <code>&lt;form>&lt;label>Search&lt;input type="text" id="search-bar">&lt;/label&gt;&lt;a class="button-nav" href="#">&lt;/form&gt;</code>
-            </div>
-            <div class="rendered">
-                <!-- Rendered element -->
-                <h4>Rendered element:</h4>
-                <form>
-                    <label>
-                        Search
-                        <input type="text" class="search-bar">
-                    </label>
-                    <a class="button-nav" href="#">Go</a>
-                </form>
-            </div>
-        </section>
-
-        <section class="container-two">
-            <!-- Radio Button with Label -->
-
-
-            <div class="sample">
-                <h3>Radio Button with Label</h3>
-                <h4>Sample code:</h4>
-                <code>&lt;label>&lt;input type="radio" name="options" value="option1">Yes&lt;/label&gt;</code>
-                <!-- Rendered element -->
-            </div>
-            <div class="rendered">
-                <h4>Rendered element:</h4>
-                <label>
-                    <input type="radio" name="options" value="option1">Yes
-                </label>
-                <label>
-                    <input type="radio" name="options" value="option2">No
-                </label>
-            </div>
-        </section>
-
-
-        <section class="container-two">
-            <!-- Image as a link -->
-
-            <div class="sample">
-                <h3>Image as a Link</h3>
-                <h4>Sample code:</h4>
-                <code>&lt;a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration">&lt;img src="../img/shoe.webp"
-                            alt="Air Jordan 1 Lost and Found" width="300" height="200">s&lt;/a&gt;</code>
-            </div>
-            <div class="rendered">
-                <!-- Rendered element -->
-                <h4>Rendered element:</h4>
-                <!-- The image used is from https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration -->
-                <a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration"><img src="../img/shoe.webp"
-                        alt="Air Jordan 1 Lost and Found" width="300" height="200"></a>
-            </div>
-        </section>
-    </section>
-
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-        <h2>Text Elements</h2>
-
-        <section class="element">
-            <!-- Headings -->
-            <h3>Headings</h3>
-
-            <h1>Heading One</h1>
-            <h2>Heading Two</h2>
-            <h3>Heading Three</h3>
-            <h4>Heading Four</h4>
-        </section>
-
-
-        <section class="element">
-            <!-- Paragraphs -->
-            <h3>Paragraphs</h3>
-            <p>PosterizedKicks is a company that specializes in collectible sneaker posters. They offer a wide
-                range
-                of
-                posters featuring some of the most popular and iconic sneaker models from brands like Nike,
-                Adidas,
-                Reebok, and more. Their posters are high-quality,p rinted on thick, cardstock paper, and feature
-                vibrant
-                colours and crisp details.</p>
-        </section>
-
-
-        <section class="element">
-            <!-- Numbered Lists -->
-            <h3>Numbered Lists</h3>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
-        </section>
-    </section>
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-        <h2>Combined Elements</h2>
-
-        <section class="element">
-            <!-- Main Navigation -->
-            <h3>Main Navigation</h3>
-            <nav>
-                <a href="#home" class="button">Home</a>
-                <a href="#about" class="button">About</a>
-                <a href="#services" class="button">Services</a>
-                <a href="#contact" class="button">Contact</a>
-            </nav>
-        </section>
-
-        <!-- Product/Service Listing -->
-        <div class="poster-two">
-            <a href="https://stockx.com/nike-sb-dunk-low-panda-pigeon"><img src="../img/NikeDunkLowPandaPigeon.jpg"
-                    alt="Nike SB Dunk Low" width="350" height="500"></a>
-            <div class="listing-content">
-                <h4>Nike SB Dunk Low Poster</h4>
-                <p class="price">$25</p>
-                <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue">View Details</a>
-                <div>
-                    <!-- Quantity input  -->
-                    <label>
-                        Quantity
-                        <input type="text" class="search-bar" size="2">
-                    </label>
-                </div>
-            </div>
-            <!-- Add to cart button -->
-            <a class="button-nav-cart" href="#">Add to cart</a>
-        </div>
- 
-        <section class="element">
-
-            <!-- Payment Form -->
-            <h3>Payment Form</h3>
-            <form>
-                <fieldset>
-                    <div class="deliveryoptions">
-                        <h3>Delivery Options</h3>
-        
-                        <label>
-                            <input type="radio" name="options" value="option1">Ship
-                        </label>
-                        <label>
-                            <input type="radio" name="options" value="option2">Pick Up
-                        </label>
-                    </div>
-        
-                    <!-- User Information -->
-                    <div class="user-info">
-                        <label>
-                            First Name
-                            <input type="text" class="search-bar" name="firstname">
-                        </label>
-                        <label>
-                            Last Name
-                            <input type="text" class="search-bar" name="lastname">
-                        </label>
-                        <label>
-                            Address
-                            <input type="text" class="search-bar" name="address">
-                        </label>
-                    </div>
-        
-                    <!-- Payment Method-->
-                    <h3>Payment Method</h3>
-                    <div class="paymentmethod">
-                        <label>
-                            <input type="radio" name="options" value="option1">Debit or Credit Card
-                        </label>
-                        <label>
-                            <input type="radio" name="options" value="option2">Paypal
-                        </label>
-                    </div>
-        
-                    <!-- Payment Information -->
-                    <h3>Payment Information</h3>
-                    <div class="payment-info">
-                        <label>
-                            Card Number
-                            <input type="text" class="search-bar" name="cardnumber">
-                        </label>
-                        <label>
-                            CVV
-                            <input type="text" class="search-bar" name="cvv">
-                        </label>
-                        <label>
-                            Expiration Date
-                            <input type="text" class="search-bar" name="expirydate" size="4">
-                        </label>
-                    </div>
-                    <a class="button-nav" href="#">Pay</a>
-                </fieldset>
-            </form>
-
-            <!-- Checkout Cart -->
-            <h3>Checkout Cart</h3>
-            <section class="container">
-
-                <!-- Cart item 1 -->
-                <div id="product-one">
-                    <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img src="img/Jordan1.jpg"
-                            alt="Jordan 1 University Blue" width="175" height="250"></a>
-                    <h4>Jordan 1 University Blue Poster</h4>
-                    <p class="price">$25</p>
-                    <a class="button-nav" href="#">Edit</a>
-                    <a class="button-nav" href="#">Delete</a>
-                    <a class="button-nav" href="#">Move to Wishlist</a>
-                </div>
-
-                <!-- Cart item 2 -->
-                <div id="product-two">
-                    <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img
-                            src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike Dunk Low Panda Pigeon" width="175"
-                            height="250"></a>
-                    <h4>Nike Dunk Low Panda Pigeon Poster</h4>
-                    <p class="price">$25</p>
-                    <a class="button-nav" href="#">Edit</a>
-                    <a class="button-nav" href="#">Delete</a>
-                    <a class="button-nav" href="#">Move to Wishlist</a>
-                </div>
-                <div id="total">
-                    <div>Total: $50</div>
-                    <a class="button-nav" href="#">Checkout</a>
-                </div>
-            </section>
-        </section>
-
-
-        <!-- BASIC BRANDING IDEAS -->
-        <section class="container">
-
-            <!-- What does the company offer? -->
-            <div class="branding-one">
-                <h3>Basic Branding Ideas</h3>
-                <h4>What does the company do, or offer?</h4>
-                <p>PosterizedKicks is a company that specializes in collectible and tradeable sneaker posters. They
-                    offer a
-                    wide
-                    range of posters featuring some of the most popular
-                    and iconic sneaker models from brands like Nike, Adidas, New Balance, and more. Their posters
-                    are
-                    high-quality, printed on thick, cardstock paper, and feature vibrant colours and crisp details.
-                </p>
-            </div>
-            <!-- Who is the company to potential customers? -->
-            <div class="branding-two">
-                <h4>Who is the company to potential customers?</h4>
-                <p>PosterizedKicks is a company that caters to sneaker enthusiasts and collectors who are looking
-                    for
-                    unique
-                    and
-                    high-quality posters to display in their homes or offices. The company is for people
-                    who take interest in fashion, especially sneakers, and have an eye for design and style. They
-                    are
-                    passionate
-                    about their collections and they want to showcase their appreciation for their favorite
-                    sneaker designs in a visually appealing way. Customers are looking for a company that can offer
-                    them
-                    the
-                    opportunity to own a piece of sneaker history, and PosterizedKicks offers them that opportunity.
-                </p>
-            </div>
-        </section>
-
-        <!-- Why will someone buy this product? -->
-        <section class="container">
-            <div class="branding-one">
-                <h4>Why might this company entice someone to purchase a product or service</h4>
-                <p>It offers a unique and visually appealing way to display a person's passion for sneakers. The
-                    company's
-                    high-quality posters
-                    are designed to be framed and displayed, allowing customers to showcase their favorite sneaker
-                    designs
-                    in a
-                    decorative and stylish manner. The company's unique focus on sneaker enthusiasts and collectors
-                    and the high-quality of their products and services may also attract customers. Because each
-                    poster
-                    is
-                    very
-                    limited, this added value of rarity and collectibility makes the posters more desirable and
-                    valuable
-                    to
-                    the
-                    customers.</p>
-            </div>
-
-            <!-- User Persona -->
-            <div class="branding-two">
-                <h4>User Persona</h4>
-                <p>Name: Michael
-                    <br>Age: 26
-                    <br>Occupation: Graphic Designer
-                </p>
-                <p>Michael is a graphic designer with a strong interest in fashion and sneakers. He's been
-                    collecting
-                    sneakers
-                    for over 10 years and is always looking for new ways to display his collection. He often visits
-                    sneaker-related websites,
-                    blogs and social media channels. He's an avid art collector with an eye for design and style,
-                    and is
-                    drawn
-                    to unique, visually appealing items to add to his collection. He discovered PosterizedKicks
-                    through
-                    a
-                    sneaker forum
-                    and was impressed by their high-quality posters with popular sneaker designs and customization
-                    options.
-                    As
-                    for every sneaker fan out there, Michael has a strong interest in collectibles and limited
-                    edition
-                    items
-                    and
-                    believes that PosterizedKicks
-                    posters will be perfect for his collection and for display.</p>
-            </div>
-
-        </section>
-
-
-        <!-- BRAND COMPONENTS -->
-        <section>
-            <h2>Brand Components</h2>
-            <!-- Fonts -->
-            <h3>Fonts</h3>
-            <p>The look I want for this website is it to be clean, legible, and visually appealing. I selected
-                two
-                different sans-serif fonts</p>
-            <h1>Archivo Black | Heading One</h1>
-            <h2>Archivo Semi Bold | Heading Two</h2>
-            <h3>Archivo Semi Bold | Heading Three</h3>
-            <h4>Archivo Semi Bold | Body Bold</h4>
-            <p>Source Sans Pro | Body</p>
-            <p>Source Sans Pro | Button & Navigation</p>
-
-
-            <!-- Colour Palettes -->
-            <h3>Colour Palettes</h3>
-            <div class="container-two">
-                <div id="black">
-                    <p>Black</p>
-                    <p>HEX: #000000</p>
-                </div>
-                <div id="white">
-                    <p>White</p>
-                    <p>HEX: #FFFFFF</p>
-                </div>
-                <div id="gray">
-                    <p>Gray</p>
-                    <p>HEX: #445063</p>
-                </div>
-                <div id="blue">
-                    <p>Blue</p>
-                    <p>HEX: #10739B</p>
-                </div>
-            </div>
-
-            <!-- More branding -->
-            <h4>Why did I choose this colour palette?</h4>
-            <p>I chose a colour palette that is neutral and minimalistic. This colour palette includes shades of
-                white,
-                gray
-                and black, and compliments of blue, creating a clean and modern look that would be well suited
-                for
-                showcasing the posters.</p>
-            <h4>How will it affect the users?</h4>
-            <p>A neutral and minimalistic colour palette can create a clean and modern look for the website,
-                making
-                it
-                easy
-                for users to navigate and focus on the main content, which in this case are the posters. This
-                type
-                of
-                colour
-                palette can create a sense of simplicity,
-                elegance and timelessness, making the website look professional and trustworthy. It can also
-                convey
-                a
-                sense
-                of simplicity and functionality, which can be beneficial for a website that sells a specific
-                product, as
-                it allows the user to focus on the product itself rather than being distracted by a lot of
-                colours
-                and
-                elements.</p>
-
-                <!-- Potential imagery -->
-            <section class="container">
-                <div id="poster-brand">
-                    <h4>Potential imagery, and, or, art direction</h4>
-                    <p>Customized posters: Showcasing the customized posters in a visually appealing way, such as on a
-                        wall, in aframe, or on a desk, can be used to convey the company's customization options.</p>
-                    <p>Sneaker design sketches: Showing sneaker design sketches and illustrations can be used to create
-                        a sense of
-                        the creative process behind the posters and the company's attention to detail.</p>
-                    <p>Sneaker macro shots: High-quality, detailed macro shots of sneakers, shot in a studio or on
-                        location, can be
-                        used to showcase the posters and the attention to detail that goes into them.</p>
-                </div>
-                <div id="poster-brand-img">
-                    <img src="../img/example1.jpg" alt="Example 1" width="160" height="250">
-
-
-                    <img src="../img/example2.jpg" alt="Example 2" width="220" height="250">
-
-                    <img src="../img/example3.jfif" alt="Example 3" width="400" height="250">
-                </div>
-            </section>
-        </section>
-
-
-        <!-- Citations -->
-        <section id="citations">
-            <h2>Citations</h2>
-
-            <ul>
-                <li>Archivo Black Font. Retrieved from
-                    https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap</li>
-                <li>Source Sans Pro. Retrieved from
-                    https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap</li>
-                <li>Archivo 600. Retrieved from https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap
-                </li>
-                <li>Source Sans Pro 600. Retrieved from
-                    ttps://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap</li>
-                <li>Black/Red/White Jordan 1 Image. Retrived from
-                    https://realsport101.com/real-kit/best-places-to-buy-sneakers/</li>
-                <li class="long-text">Jordan 1 Silouhette. Retrieved from
-                    https://www.google.com/search?tbs=sbi:AMhZZit-KwuhJLO5NZjkKzlP47P0dj1T3_1gwVrr5u3ch4ZDG6V6bdzZgKqqbCNUKkt_1Q9ViC5fgjrbcHO6p2UbcHsfkCE6PVo_1_1cJXMWQa4pp4T3b6UNePOa9nI5bLjKaNs3r3V78A5ut0XNCygyXHyEjSmiGyBovQ
-                </li>
-                <li>All poster images are sourced from Noah De Guzman and @PosterizedKicks</li>
+    <div class="grid-container">
+        <nav class="col-nav">
+            <ul class="navBar">
+                <li><a class="navBar-item" href="#interactive_elements">Interactive Elements</a></li>
+                <li><a class="navBar-item" href="#text_elements">Text Elements</a></li>
+                <li><a class="navBar-item" href="#combined_elements">Combined Elements</a></li>
+                <li><a class="navBar-item" href="product_listing.html">Product Listing Template</a></li>
+                <li><a class="navBar-item" href="checkout.html">Checkout Template</a></li>
+                <li><a class="navBar-item" href="#citations">Citations</a></li>
             </ul>
+        </nav>
 
-        </section>
-    </section>
+        <div class="col-content">
+            <!-- INTERACTIVE ELEMENTS SECTION // -->
+            <section id="interactive_elements">
+                <h2>Interactive Elements</h2>
 
 
+                <section class="element">
+                    <!-- In-text links -->
+                    <h3>In-text link</h3>
+                    <p>Get the latest <a href="https://www.nike.com" id="nike">Nike</a> posters today.</p>
+                    <p>Get the latest Adidas posters today. <a href="https://www.adidas.com" id="adidas">Learn more ></a></p>
+                </section>
+
+                <section class="element">
+                    <!-- Navigation link -->
+                    <h3>Navigation Link</h3>
+                    <nav>
+                        <a href="#home" class="button">Home</a>
+                    </nav>
+                    <h4>CSS selector:</h4>
+                    <p>.button-nav</p>
+
+                    <!-- Sample code -->
+                    <h4>Sample code:</h4>
+                    <code>&lt;a class="button-nav" href="#">Submit&lt;/a&gt;</code>
+
+                    <!-- Rendered element -->
+                    <h4>Rendered element:</h4>
+                    <a class="button-nav" href="#">Submit</a>
+                </section>
+
+
+                <section class="element">
+                    <!-- Submit/Reset Buttons -->
+                    <h3>Submit/Reset Buttons</h3>
+                    <!-- This code is referenced from the example from the sample code given above -->
+                    <a class="button-nav" href="#">Submit</a>
+                    <a class="button-nav" href="#">Reset</a>
+                </section>
+
+                <section class="container-two">
+
+                    <!-- I figured this out from https://www.w3schools.com/tags/att_input_type_text.asp -->
+                    <div class="sample">
+                        <!-- Text Input Field with Label -->
+                        <h3>Text Input Field with Label</h3>
+                        <h4>Sample code:</h4>
+                        <code>&lt;form>&lt;label>Search&lt;input type="text" id="search-bar">&lt;/label&gt;&lt;a class="button-nav" href="#">&lt;/form&gt;</code>
+                    </div>
+                    <div class="rendered">
+                        <!-- Rendered element -->
+                        <h4>Rendered element:</h4>
+                        <form>
+                            <label>
+                                Search
+                                <input type="text" class="search-bar">
+                            </label>
+                            <a class="button-nav" href="#">Go</a>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="container-two">
+                    <!-- Radio Button with Label -->
+
+
+                    <div class="sample">
+                        <h3>Radio Button with Label</h3>
+                        <h4>Sample code:</h4>
+                        <code>&lt;label>&lt;input type="radio" name="options" value="option1">Yes&lt;/label&gt;</code>
+                        <!-- Rendered element -->
+                    </div>
+                    <div class="rendered">
+                        <h4>Rendered element:</h4>
+                        <label>
+                            <input type="radio" name="options" value="option1">Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="options" value="option2">No
+                        </label>
+                    </div>
+                </section>
+
+
+                <section class="container-two">
+                    <!-- Image as a link -->
+
+                    <div class="sample">
+                        <h3>Image as a Link</h3>
+                        <h4>Sample code:</h4>
+                        <code>&lt;a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration">&lt;img src="../img/shoe.webp"
+                            alt="Air Jordan 1 Lost and Found" width="300" height="200">s&lt;/a&gt;</code>
+                    </div>
+                    <div class="rendered">
+                        <!-- Rendered element -->
+                        <h4>Rendered element:</h4>
+                        <!-- The image used is from https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration -->
+                        <a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration"><img src="../img/shoe.webp"
+                                                                                                             alt="Air Jordan 1 Lost and Found" width="300" height="200"></a>
+                    </div>
+                </section>
+            </section>
+
+
+            <!-- TEXT ELEMENTS SECTION // -->
+            <section id="text_elements">
+                <h2>Text Elements</h2>
+
+                <section class="element">
+                    <!-- Headings -->
+                    <h3>Headings</h3>
+
+                    <h1>Heading One</h1>
+                    <h2>Heading Two</h2>
+                    <h3>Heading Three</h3>
+                    <h4>Heading Four</h4>
+                </section>
+
+
+                <section class="element">
+                    <!-- Paragraphs -->
+                    <h3>Paragraphs</h3>
+                    <p>PosterizedKicks is a company that specializes in collectible sneaker posters. They offer a wide
+                        range
+                        of
+                        posters featuring some of the most popular and iconic sneaker models from brands like Nike,
+                        Adidas,
+                        Reebok, and more. Their posters are high-quality,p rinted on thick, cardstock paper, and feature
+                        vibrant
+                        colours and crisp details.</p>
+                </section>
+
+
+                <section class="element">
+                    <!-- Numbered Lists -->
+                    <h3>Numbered Lists</h3>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ol>
+                </section>
+            </section>
+
+
+            <!-- COMBINED ELEMENTS SECTION // -->
+            <section id="combined_elements">
+                <h2>Combined Elements</h2>
+
+                <section class="element">
+                    <!-- Main Navigation -->
+                    <h3>Main Navigation</h3>
+                    <nav>
+                        <a href="#home" class="button">Home</a>
+                        <a href="#about" class="button">About</a>
+                        <a href="#services" class="button">Services</a>
+                        <a href="#contact" class="button">Contact</a>
+                    </nav>
+                </section>
+
+                <!-- Product/Service Listing -->
+                <div class="poster-two">
+                    <a href="https://stockx.com/nike-sb-dunk-low-panda-pigeon"><img src="../img/NikeDunkLowPandaPigeon.jpg"
+                                                                                    alt="Nike SB Dunk Low" width="350" height="500"></a>
+                    <div class="listing-content">
+                        <h4>Nike SB Dunk Low Poster</h4>
+                        <p class="price">$25</p>
+                        <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue">View Details</a>
+                        <div>
+                            <!-- Quantity input  -->
+                            <label>
+                                Quantity
+                                <input type="text" class="search-bar" size="2">
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Add to cart button -->
+                    <a class="button-nav-cart" href="#">Add to cart</a>
+                </div>
+
+                <section class="element">
+
+                    <!-- Payment Form -->
+                    <h3>Payment Form</h3>
+                    <form>
+                        <fieldset>
+                            <div class="deliveryoptions">
+                                <h3>Delivery Options</h3>
+
+                                <label>
+                                    <input type="radio" name="options" value="option1">Ship
+                                </label>
+                                <label>
+                                    <input type="radio" name="options" value="option2">Pick Up
+                                </label>
+                            </div>
+
+                            <!-- User Information -->
+                            <div class="user-info">
+                                <label>
+                                    First Name
+                                    <input type="text" class="search-bar" name="firstname">
+                                </label>
+                                <label>
+                                    Last Name
+                                    <input type="text" class="search-bar" name="lastname">
+                                </label>
+                                <label>
+                                    Address
+                                    <input type="text" class="search-bar" name="address">
+                                </label>
+                            </div>
+
+                            <!-- Payment Method-->
+                            <h3>Payment Method</h3>
+                            <div class="paymentmethod">
+                                <label>
+                                    <input type="radio" name="options" value="option1">Debit or Credit Card
+                                </label>
+                                <label>
+                                    <input type="radio" name="options" value="option2">Paypal
+                                </label>
+                            </div>
+
+                            <!-- Payment Information -->
+                            <h3>Payment Information</h3>
+                            <div class="payment-info">
+                                <label>
+                                    Card Number
+                                    <input type="text" class="search-bar" name="cardnumber">
+                                </label>
+                                <label>
+                                    CVV
+                                    <input type="text" class="search-bar" name="cvv">
+                                </label>
+                                <label>
+                                    Expiration Date
+                                    <input type="text" class="search-bar" name="expirydate" size="4">
+                                </label>
+                            </div>
+                            <a class="button-nav" href="#">Pay</a>
+                        </fieldset>
+                    </form>
+
+                    <!-- Checkout Cart -->
+                    <h3>Checkout Cart</h3>
+                    <section class="container">
+
+                        <!-- Cart item 1 -->
+                        <div id="product-one">
+                            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img src="img/Jordan1.jpg"
+                                                                                                         alt="Jordan 1 University Blue" width="175" height="250"></a>
+                            <h4>Jordan 1 University Blue Poster</h4>
+                            <p class="price">$25</p>
+                            <a class="button-nav" href="#">Edit</a>
+                            <a class="button-nav" href="#">Delete</a>
+                            <a class="button-nav" href="#">Move to Wishlist</a>
+                        </div>
+
+                        <!-- Cart item 2 -->
+                        <div id="product-two">
+                            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img
+                                    src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike Dunk Low Panda Pigeon" width="175"
+                                    height="250"></a>
+                            <h4>Nike Dunk Low Panda Pigeon Poster</h4>
+                            <p class="price">$25</p>
+                            <a class="button-nav" href="#">Edit</a>
+                            <a class="button-nav" href="#">Delete</a>
+                            <a class="button-nav" href="#">Move to Wishlist</a>
+                        </div>
+                        <div id="total">
+                            <div>Total: $50</div>
+                            <a class="button-nav" href="#">Checkout</a>
+                        </div>
+                    </section>
+                </section>
+
+
+                <!-- BASIC BRANDING IDEAS -->
+                <section class="container">
+
+                    <!-- What does the company offer? -->
+                    <div class="branding-one">
+                        <h3>Basic Branding Ideas</h3>
+                        <h4>What does the company do, or offer?</h4>
+                        <p>PosterizedKicks is a company that specializes in collectible and tradeable sneaker posters. They
+                            offer a
+                            wide
+                            range of posters featuring some of the most popular
+                            and iconic sneaker models from brands like Nike, Adidas, New Balance, and more. Their posters
+                            are
+                            high-quality, printed on thick, cardstock paper, and feature vibrant colours and crisp details.
+                        </p>
+                    </div>
+                    <!-- Who is the company to potential customers? -->
+                    <div class="branding-two">
+                        <h4>Who is the company to potential customers?</h4>
+                        <p>PosterizedKicks is a company that caters to sneaker enthusiasts and collectors who are looking
+                            for
+                            unique
+                            and
+                            high-quality posters to display in their homes or offices. The company is for people
+                            who take interest in fashion, especially sneakers, and have an eye for design and style. They
+                            are
+                            passionate
+                            about their collections and they want to showcase their appreciation for their favorite
+                            sneaker designs in a visually appealing way. Customers are looking for a company that can offer
+                            them
+                            the
+                            opportunity to own a piece of sneaker history, and PosterizedKicks offers them that opportunity.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Why will someone buy this product? -->
+                <section class="container">
+                    <div class="branding-one">
+                        <h4>Why might this company entice someone to purchase a product or service</h4>
+                        <p>It offers a unique and visually appealing way to display a person's passion for sneakers. The
+                            company's
+                            high-quality posters
+                            are designed to be framed and displayed, allowing customers to showcase their favorite sneaker
+                            designs
+                            in a
+                            decorative and stylish manner. The company's unique focus on sneaker enthusiasts and collectors
+                            and the high-quality of their products and services may also attract customers. Because each
+                            poster
+                            is
+                            very
+                            limited, this added value of rarity and collectibility makes the posters more desirable and
+                            valuable
+                            to
+                            the
+                            customers.</p>
+                    </div>
+
+                    <!-- User Persona -->
+                    <div class="branding-two">
+                        <h4>User Persona</h4>
+                        <p>Name: Michael
+                            <br>Age: 26
+                            <br>Occupation: Graphic Designer
+                        </p>
+                        <p>Michael is a graphic designer with a strong interest in fashion and sneakers. He's been
+                            collecting
+                            sneakers
+                            for over 10 years and is always looking for new ways to display his collection. He often visits
+                            sneaker-related websites,
+                            blogs and social media channels. He's an avid art collector with an eye for design and style,
+                            and is
+                            drawn
+                            to unique, visually appealing items to add to his collection. He discovered PosterizedKicks
+                            through
+                            a
+                            sneaker forum
+                            and was impressed by their high-quality posters with popular sneaker designs and customization
+                            options.
+                            As
+                            for every sneaker fan out there, Michael has a strong interest in collectibles and limited
+                            edition
+                            items
+                            and
+                            believes that PosterizedKicks
+                            posters will be perfect for his collection and for display.</p>
+                    </div>
+
+                </section>
+
+
+                <!-- BRAND COMPONENTS -->
+                <section>
+                    <h2>Brand Components</h2>
+                    <!-- Fonts -->
+                    <h3>Fonts</h3>
+                    <p>The look I want for this website is it to be clean, legible, and visually appealing. I selected
+                        two
+                        different sans-serif fonts</p>
+                    <h1>Archivo Black | Heading One</h1>
+                    <h2>Archivo Semi Bold | Heading Two</h2>
+                    <h3>Archivo Semi Bold | Heading Three</h3>
+                    <h4>Archivo Semi Bold | Body Bold</h4>
+                    <p>Source Sans Pro | Body</p>
+                    <p>Source Sans Pro | Button & Navigation</p>
+
+
+                    <!-- Colour Palettes -->
+                    <h3>Colour Palettes</h3>
+                    <div class="container-two">
+                        <div id="black">
+                            <p>Black</p>
+                            <p>HEX: #000000</p>
+                        </div>
+                        <div id="white">
+                            <p>White</p>
+                            <p>HEX: #FFFFFF</p>
+                        </div>
+                        <div id="gray">
+                            <p>Gray</p>
+                            <p>HEX: #445063</p>
+                        </div>
+                        <div id="blue">
+                            <p>Blue</p>
+                            <p>HEX: #10739B</p>
+                        </div>
+                    </div>
+
+                    <!-- More branding -->
+                    <h4>Why did I choose this colour palette?</h4>
+                    <p>I chose a colour palette that is neutral and minimalistic. This colour palette includes shades of
+                        white,
+                        gray
+                        and black, and compliments of blue, creating a clean and modern look that would be well suited
+                        for
+                        showcasing the posters.</p>
+                    <h4>How will it affect the users?</h4>
+                    <p>A neutral and minimalistic colour palette can create a clean and modern look for the website,
+                        making
+                        it
+                        easy
+                        for users to navigate and focus on the main content, which in this case are the posters. This
+                        type
+                        of
+                        colour
+                        palette can create a sense of simplicity,
+                        elegance and timelessness, making the website look professional and trustworthy. It can also
+                        convey
+                        a
+                        sense
+                        of simplicity and functionality, which can be beneficial for a website that sells a specific
+                        product, as
+                        it allows the user to focus on the product itself rather than being distracted by a lot of
+                        colours
+                        and
+                        elements.</p>
+
+                    <!-- Potential imagery -->
+                    <section class="container">
+                        <div id="poster-brand">
+                            <h4>Potential imagery, and, or, art direction</h4>
+                            <p>Customized posters: Showcasing the customized posters in a visually appealing way, such as on a
+                                wall, in aframe, or on a desk, can be used to convey the company's customization options.</p>
+                            <p>Sneaker design sketches: Showing sneaker design sketches and illustrations can be used to create
+                                a sense of
+                                the creative process behind the posters and the company's attention to detail.</p>
+                            <p>Sneaker macro shots: High-quality, detailed macro shots of sneakers, shot in a studio or on
+                                location, can be
+                                used to showcase the posters and the attention to detail that goes into them.</p>
+                        </div>
+                        <div id="poster-brand-img">
+                            <img src="../img/example1.jpg" alt="Example 1" width="160" height="250">
+
+
+                            <img src="../img/example2.jpg" alt="Example 2" width="220" height="250">
+
+                            <img src="../img/example3.jfif" alt="Example 3" width="400" height="250">
+                        </div>
+                    </section>
+                </section>
+
+
+                <!-- Citations -->
+                <section id="citations">
+                    <h2>Citations</h2>
+
+                    <ul>
+                        <li>Archivo Black Font. Retrieved from
+                            https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap</li>
+                        <li>Source Sans Pro. Retrieved from
+                            https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap</li>
+                        <li>Archivo 600. Retrieved from https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap
+                        </li>
+                        <li>Source Sans Pro 600. Retrieved from
+                            ttps://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap</li>
+                        <li>Black/Red/White Jordan 1 Image. Retrived from
+                            https://realsport101.com/real-kit/best-places-to-buy-sneakers/</li>
+                        <li class="long-text">Jordan 1 Silouhette. Retrieved from
+                            https://www.google.com/search?tbs=sbi:AMhZZit-KwuhJLO5NZjkKzlP47P0dj1T3_1gwVrr5u3ch4ZDG6V6bdzZgKqqbCNUKkt_1Q9ViC5fgjrbcHO6p2UbcHsfkCE6PVo_1_1cJXMWQa4pp4T3b6UNePOa9nI5bLjKaNs3r3V78A5ut0XNCygyXHyEjSmiGyBovQ
+                        </li>
+                        <li>All poster images are sourced from Noah De Guzman and @PosterizedKicks</li>
+                    </ul>
+
+                </section>
+            </section>
+
+        </div>
+    </div>
 
 </body>
 

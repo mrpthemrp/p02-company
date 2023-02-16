@@ -4,7 +4,6 @@
 }
 
 body {
-  margin: 4rem;
   padding: 2rem;
   align-content: center;
   background-color: #FCFCFC;
@@ -73,11 +72,23 @@ p{
   p{
     max-width: 90%;
   }
+  .navBar-item {
+    font-size: 0.8rem;
+    width: auto;
+    padding: 0.75rem;
+    margin-right: 0.5rem;
+  }
 }
 
 @media (max-width: 300px) {
   .container {
     flex-direction: column;
+  }
+  .navBar-item {
+    font-size: 0.5rem;
+    width: auto;
+    padding: 0.65rem;
+    margin-right: 0.25rem;
   }
 }
 /* // Responsive structures  */
@@ -87,6 +98,7 @@ section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
   border-top: 2px solid rgb(210, 210, 210);
+  width: fit-content;
 }
 
 section code {
@@ -419,3 +431,71 @@ header p{
 }
 
 /* 2 column */
+
+/*https://www.w3schools.com/css/css_grid.asp*/
+.grid-container {
+  display: grid;
+  align-content: center;
+  margin: 3rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.header-row {
+  margin: 5%;
+}
+
+/*how to use sticky: https://developer.mozilla.org/en-US/docs/Web/CSS/position*/
+.col-nav {
+  grid-column: 1;
+  display: block;
+  position: sticky;
+  top: 15%;
+  height: fit-content;
+  width: fit-content;
+  padding: 0;
+  background-color: #FCFCFC;
+  border-right: solid 0.25rem lightgray;
+}
+
+.col-content {
+  grid-column: 2;
+  width: fit-content;
+}
+
+/*https://www.w3schools.com/howto/howto_css_fixed_menu.asp*/
+
+.navBar {
+  display: block;
+  text-decoration: none;
+  align-items: end;
+  top: 0;
+  list-style-type: none;
+
+}
+
+.navBar a:hover, .navBar a:focus {
+  text-decoration: none;
+  background-color: lightgray;
+  color: #181818;
+}
+
+/*https://stackoverflow.com/questions/7693224/how-do-i-right-align-div-elements
+    for aligning to the right*/
+.navBar-item {
+  display: block;
+  text-decoration: none;
+  width: fit-content;
+  padding: 1.25rem;
+  margin-right: 1rem;
+  margin-left: auto;
+  color:  #181818;
+  font-size: inherit;
+  text-align: right;
+}
+
+.navBar-item:hover, .navBar-item:active, .navBar-item:focus{
+  text-decoration: none;
+  background-color: lightgray;
+  color: #181818;
+}
