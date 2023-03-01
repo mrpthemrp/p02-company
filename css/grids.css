@@ -36,9 +36,42 @@
 /*LAYOUT */
 
 .content{
-    align-content: center;
+    display: block;
+    position: absolute;
+    margin: 2rem;
 }
 
+.content section{
+    margin: 0;
+    padding: 0;
+}
+
+.content-grid-2-cols{
+    display: grid;
+    align-items: center;
+    margin: 1rem;
+    column-gap: 1.5rem;
+}
+
+.content-grid-item-1{
+    grid-column: 1;
+    position: relative;
+}
+
+.content-grid-item-2{
+    grid-column: 2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.spacing-3rem{
+    margin-bottom: 3rem;
+}
+
+.spacing-15rem{
+    margin-bottom: 10rem;
+}
 
 /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 /*  CAROUSEL */
