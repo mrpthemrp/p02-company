@@ -19,7 +19,6 @@ h1{
 h2 {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   font-size: 2rem;
   margin-top: 14px;
   margin-bottom: 0;
@@ -28,8 +27,8 @@ h2 {
 h3 {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   font-size: 20px;
+  text-transform: uppercase;
   margin-top: 20px;
   padding-bottom: 1px;
 }
@@ -115,14 +114,8 @@ section code {
 #nike:hover, #nike:focus, #adidas:hover, #adidas:focus{
 	text-decoration: underline;
 }
-a{
-  color: blue;
-	text-decoration: none;
-}
 
-a:hover, a:focus{
-  text-decoration: underline;
-}
+
 nav{
   margin-top: 10px;
   padding-bottom: 10px;
@@ -132,7 +125,6 @@ nav{
 nav a{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   color: rgb(68, 80, 99);
   margin-right: 15px;
   padding-bottom: 10px;
@@ -320,21 +312,7 @@ fieldset{
   border-color: #a4a4a456;
 }
 
-#product-one{
-  max-width: 400px;
-  flex:1;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-#product-two{
-  max-width: 400px;
-  flex:1;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-#product-three{
+.product-cart{
   max-width: 400px;
   flex:1;
   padding-left: 30px;
@@ -359,6 +337,7 @@ fieldset{
   padding-left: 40px;
   padding-top: 30px;
 }
+
 .poster-one{
   flex: 1;
   margin-left: 2em;
@@ -366,6 +345,7 @@ fieldset{
   background-color: rgba(222, 222, 222, 0.151);
   max-width: 350px;
 }
+
 .poster-two{
   flex: 1;
   margin-left: 2em;
