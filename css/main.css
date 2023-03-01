@@ -118,6 +118,14 @@ a:focus img {
     border: 2px solid blue;
 }
 
+input{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 1.75rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
 /*  //  END OF NORMALIZE //  */
 
 /* NAV BAR */
@@ -202,11 +210,8 @@ a:focus img {
     border-bottom: 2px solid var(--blue-light);
 }
 
-#search-bar:hover{
-    background: #ebebeb32;
-}
-#search-bar:focus{
-    background: #ebebeb32;
+.search-bar:hover, .search-bar:focus,.search-bar:active{
+    border-color: var(--grey-darkest);
 }
 
 /* button css */
