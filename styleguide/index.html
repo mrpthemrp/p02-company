@@ -43,7 +43,8 @@
                     <!-- In-text links -->
                     <h3>In-text link</h3>
                     <p>Get the latest <a href="https://www.nike.com" class="in-text-link">Nike</a> posters today.</p>
-                    <p>Get the latest Adidas posters today. <a href="https://www.adidas.com" class="in-text-link">Learn more ></a></p>
+                    <p>Get the latest Adidas posters today. <a href="https://www.adidas.com" class="in-text-link">Learn
+                            more ></a></p>
                 </section>
 
                 <section class="element">
@@ -128,8 +129,8 @@
                         <!-- Rendered element -->
                         <h4>Rendered element:</h4>
                         <!-- The image used is from https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration -->
-                        <a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration"><img src="../img/shoe.webp"
-                                                                                                             alt="Air Jordan 1 Lost and Found" width="300" height="200"></a>
+                        <a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration"><img
+                                src="../img/shoe.webp" alt="Air Jordan 1 Lost and Found" width="300" height="200"></a>
                     </div>
                 </section>
             </section>
@@ -192,9 +193,9 @@
                 </section>
 
                 <!-- Product/Service Listing -->
-                <div class="poster-two">
-                    <a href="https://stockx.com/nike-sb-dunk-low-panda-pigeon"><img src="../img/NikeDunkLowPandaPigeon.jpg"
-                                                                                    alt="Nike SB Dunk Low" width="350" height="500"></a>
+                <div class="poster-listing">
+                    <a href="https://stockx.com/nike-sb-dunk-low-panda-pigeon"><img
+                            src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike SB Dunk Low" width="350" height="500"></a>
                     <div class="listing-content">
                         <h4>Nike SB Dunk Low Poster</h4>
                         <p class="price">$25</p>
@@ -203,12 +204,12 @@
                             <label for="quantity">Quantity:</label>
 
                             <select name="quantity">
-                              <option value="one">1</option>
-                              <option value="two">2</option>
-                              <option value="three">3</option>
-                              <option value="four">4</option>
-                              <option value="five">5</option>
-                              <option value="six">6</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
                             </select>
                         </div>
                     </div>
@@ -221,64 +222,49 @@
                     <!-- Payment Form -->
                     <h3>Payment Form</h3>
                     <form>
-                        <fieldset>
-                            <div class="deliveryoptions">
-                                <h3>Delivery Options</h3>
-
-                                <label>
-                                    <input type="radio" name="options" value="option1">Ship
-                                </label>
-                                <label>
-                                    <input type="radio" name="options" value="option2">Pick Up
-                                </label>
-                            </div>
-
-                            <!-- User Information -->
-                            <div class="user-info">
-                                <label>
-                                    First Name
-                                    <input type="text" class="search-bar" name="firstname">
-                                </label>
-                                <label>
-                                    Last Name
-                                    <input type="text" class="search-bar" name="lastname">
-                                </label>
-                                <label>
-                                    Address
-                                    <input type="text" class="search-bar" name="address">
-                                </label>
-                            </div>
-
-                            <!-- Payment Method-->
-                            <h3>Payment Method</h3>
-                            <div class="paymentmethod">
-                                <label>
-                                    <input type="radio" name="options" value="option1">Debit or Credit Card
-                                </label>
-                                <label>
-                                    <input type="radio" name="options" value="option2">Paypal
-                                </label>
-                            </div>
-
-                            <!-- Payment Information -->
-                            <h3>Payment Information</h3>
-                            <div class="payment-info">
-                                <label>
-                                    Card Number
-                                    <input type="text" class="search-bar" name="cardnumber">
-                                </label>
-                                <label>
-                                    CVV
-                                    <input type="text" class="search-bar" name="cvv">
-                                </label>
-                                <label>
-                                    Expiration Date
-                                    <input type="text" class="search-bar" name="expirydate" size="4">
-                                </label>
-                            </div>
-                            <a class="button-nav" href="#">Pay</a>
-                        </fieldset>
-                    </form>
+                        <div class="payment-methods">
+                            <h4>Payment Methods</h4>
+                          <label>
+                            <input type="radio" name="payment-method" value="credit-card">
+                            <span class="method-label">Debit or Credit</span>
+                          </label>
+                          <label>
+                            <input type="radio" name="payment-method" value="paypal">
+                            <span class="method-label">Paypal</span>
+                          </label>
+                        </div>
+                        <div class="form-fields">
+                          <div class="input-row">
+                            <label>                             
+                              <input type="text" name="first-name" required>
+                              First Name
+                            </label>
+                            <label>
+                              <input type="text" name="last-name" required>
+                              Last Name
+                            </label>
+                          </div>
+                          <div class="input-row">
+                            <label>
+                              <input type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••" required>
+                              Credit Card Number
+                            </label>
+                            <label>
+                              <input type="text" name="security-code" placeholder="CVV" required>
+                              Security Code
+                            </label>
+                          </div>
+                          <div class="input-row">
+                            <label>
+                              <input type="text" name="card-expiration" placeholder="MM / YY" required>
+                              Card Expiration
+                            </label>
+                          </div>
+                        </div> 
+                        <div class="payment-button-div">
+                            <a class="button-nav" href="#">Submit Order</a>
+                        </div>                   
+                      </form>
 
                     <!-- Checkout Cart -->
                     <h3>Checkout Cart</h3>
@@ -286,8 +272,9 @@
 
                         <!-- Cart item 1 -->
                         <div class="product-cart">
-                            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img src="../img/Jordan1.jpg"
-                                                                                                         alt="Jordan 1 University Blue" width="175" height="250"></a>
+                            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img
+                                    src="../img/Jordan1.jpg" alt="Jordan 1 University Blue" width="175"
+                                    height="250"></a>
                             <h4>Jordan 1 University Blue Poster</h4>
                             <p class="price">$25</p>
                             <a class="button-nav" href="#">Edit</a>
@@ -315,31 +302,38 @@
                     <div class="branding-one">
                         <h3>Basic Branding Ideas</h3>
                         <h4>What does the company do, or offer?</h4>
-                        <p>PosterizedKicks is a company that specializes in collectible and tradeable sneaker posters. They
+                        <p>PosterizedKicks is a company that specializes in collectible and tradeable sneaker posters.
+                            They
                             offer a
                             wide
                             range of posters featuring some of the most popular
-                            and iconic sneaker models from brands like Nike, Adidas, New Balance, and more. Their posters
+                            and iconic sneaker models from brands like Nike, Adidas, New Balance, and more. Their
+                            posters
                             are
-                            high-quality, printed on thick, cardstock paper, and feature vibrant colours and crisp details.
+                            high-quality, printed on thick, cardstock paper, and feature vibrant colours and crisp
+                            details.
                         </p>
                     </div>
                     <!-- Who is the company to potential customers? -->
                     <div class="branding-two">
                         <h4>Who is the company to potential customers?</h4>
-                        <p>PosterizedKicks is a company that caters to sneaker enthusiasts and collectors who are looking
+                        <p>PosterizedKicks is a company that caters to sneaker enthusiasts and collectors who are
+                            looking
                             for
                             unique
                             and
                             high-quality posters to display in their homes or offices. The company is for people
-                            who take interest in fashion, especially sneakers, and have an eye for design and style. They
+                            who take interest in fashion, especially sneakers, and have an eye for design and style.
+                            They
                             are
                             passionate
                             about their collections and they want to showcase their appreciation for their favorite
-                            sneaker designs in a visually appealing way. Customers are looking for a company that can offer
+                            sneaker designs in a visually appealing way. Customers are looking for a company that can
+                            offer
                             them
                             the
-                            opportunity to own a piece of sneaker history, and PosterizedKicks offers them that opportunity.
+                            opportunity to own a piece of sneaker history, and PosterizedKicks offers them that
+                            opportunity.
                         </p>
                     </div>
                 </section>
@@ -351,10 +345,12 @@
                         <p>It offers a unique and visually appealing way to display a person's passion for sneakers. The
                             company's
                             high-quality posters
-                            are designed to be framed and displayed, allowing customers to showcase their favorite sneaker
+                            are designed to be framed and displayed, allowing customers to showcase their favorite
+                            sneaker
                             designs
                             in a
-                            decorative and stylish manner. The company's unique focus on sneaker enthusiasts and collectors
+                            decorative and stylish manner. The company's unique focus on sneaker enthusiasts and
+                            collectors
                             and the high-quality of their products and services may also attract customers. Because each
                             poster
                             is
@@ -376,16 +372,19 @@
                         <p>Michael is a graphic designer with a strong interest in fashion and sneakers. He's been
                             collecting
                             sneakers
-                            for over 10 years and is always looking for new ways to display his collection. He often visits
+                            for over 10 years and is always looking for new ways to display his collection. He often
+                            visits
                             sneaker-related websites,
-                            blogs and social media channels. He's an avid art collector with an eye for design and style,
+                            blogs and social media channels. He's an avid art collector with an eye for design and
+                            style,
                             and is
                             drawn
                             to unique, visually appealing items to add to his collection. He discovered PosterizedKicks
                             through
                             a
                             sneaker forum
-                            and was impressed by their high-quality posters with popular sneaker designs and customization
+                            and was impressed by their high-quality posters with popular sneaker designs and
+                            customization
                             options.
                             As
                             for every sneaker fan out there, Michael has a strong interest in collectibles and limited
@@ -426,11 +425,11 @@
                             <p>White</p>
                             <p>HEX: #FFFFFF</p>
                         </div>
-                        <div id="gray" class="branding-two">
+                        <div id="gray" class="branding-one">
                             <p>Gray</p>
                             <p>HEX: #445063</p>
                         </div>
-                        <div id="blue" class="branding-two">
+                        <div id="blue" class="branding-one">
                             <p>Blue</p>
                             <p>HEX: #10739B</p>
                         </div>
@@ -469,12 +468,16 @@
                     <section class="container">
                         <div id="poster-brand">
                             <h4>Potential imagery, and, or, art direction</h4>
-                            <p>Customized posters: Showcasing the customized posters in a visually appealing way, such as on a
-                                wall, in aframe, or on a desk, can be used to convey the company's customization options.</p>
-                            <p>Sneaker design sketches: Showing sneaker design sketches and illustrations can be used to create
+                            <p>Customized posters: Showcasing the customized posters in a visually appealing way, such
+                                as on a
+                                wall, in aframe, or on a desk, can be used to convey the company's customization
+                                options.</p>
+                            <p>Sneaker design sketches: Showing sneaker design sketches and illustrations can be used to
+                                create
                                 a sense of
                                 the creative process behind the posters and the company's attention to detail.</p>
-                            <p>Sneaker macro shots: High-quality, detailed macro shots of sneakers, shot in a studio or on
+                            <p>Sneaker macro shots: High-quality, detailed macro shots of sneakers, shot in a studio or
+                                on
                                 location, can be
                                 used to showcase the posters and the attention to detail that goes into them.</p>
                         </div>
@@ -499,7 +502,8 @@
                             https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap</li>
                         <li class="long-text">Source Sans Pro. Retrieved from
                             https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap</li>
-                        <li class="long-text">Archivo 600. Retrieved from https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap
+                        <li class="long-text">Archivo 600. Retrieved from
+                            https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap
                         </li>
                         <li class="long-text">Source Sans Pro 600. Retrieved from
                             ttps://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap</li>
@@ -508,7 +512,8 @@
                         <li class="long-text">Jordan 1 Silouhette. Retrieved from
                             https://www.google.com/search?tbs=sbi:AMhZZit-KwuhJLO5NZjkKzlP47P0dj1T3_1gwVrr5u3ch4ZDG6V6bdzZgKqqbCNUKkt_1Q9ViC5fgjrbcHO6p2UbcHsfkCE6PVo_1_1cJXMWQa4pp4T3b6UNePOa9nI5bLjKaNs3r3V78A5ut0XNCygyXHyEjSmiGyBovQ
                         </li>
-                        <li class="long-text">All poster images are sourced from Noah De Guzman and @PosterizedKicks</li>
+                        <li class="long-text">All poster images are sourced from Noah De Guzman and @PosterizedKicks
+                        </li>
                     </ul>
 
                 </section>

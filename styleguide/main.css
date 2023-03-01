@@ -29,6 +29,7 @@ h3 {
 h4{
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
+  margin-bottom: 1em;
 }
 
 p{
@@ -142,7 +143,7 @@ a:hover img{
   padding: 0.5em 0.75em;
   font-family: 'Source Sans Pro', sans-serif; 
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.7em;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -150,17 +151,13 @@ a:hover img{
   background: rgb(16, 115, 255);
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin-bottom: 14px;
-  margin-top: 10px;
-  margin-right: 3px;
-  margin-left: 5px;
-  min-width: 80px;
+  min-width: 9em;
+  margin-top: 3em;
 }
 
 .button-nav:hover, .button-nav:focus {
   color: rgb(16, 115, 255);
   background: rgb(255, 255, 255);
-  text-decoration: none;
 }
 
 .button-nav-cart {
@@ -169,7 +166,7 @@ a:hover img{
   padding: 0.5em 0.75em;
   font-family: 'Source Sans Pro', sans-serif; 
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.7em;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -177,11 +174,10 @@ a:hover img{
   background: rgb(16, 115, 255);
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
-  margin-bottom: 14px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  min-width: 330px;
+  margin-bottom: 1.2em;
+  margin-top: 1.2em;
+  margin-left: 2em;
+  min-width: 27em;
 }
 
 .button-nav-cart:hover, .button-nav-cart:focus {
@@ -190,13 +186,55 @@ a:hover img{
   text-decoration: none;
 }
 
-.user-info {
-  padding-top: 10px;
+/* PAYMENT FORM CODE */
+
+form {
+  background-color: #ffffff;
+  font-size: 1em;
+  padding: 2em;
+  border-radius: 2px;
+  max-width: 80em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.payment-info {
-  padding-bottom: 10px;
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  margin-left: 1em;
 }
+
+.method-label {
+  margin-left: 0.3em;
+}
+
+.form-fields label {
+  display: block;
+  margin-bottom: 0.7em;
+}
+
+.form-fields .input-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.7em;
+}
+
+.form-fields input[type="text"] {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.payment-button-div{
+  border-top: 0.15em solid rgb(210, 210, 210);
+  text-align: center;
+}
+
+/* END OF PAYMENT FORM */
 
 /* Colour Palette */
 .container {
@@ -219,62 +257,62 @@ a:hover img{
 
 #black{
   background-color: rgb(0, 0, 0);
-  max-width: 250px;
-  height: 300px;
+  max-width: 30em;
+  height: 18em;
   border: 1px solid rgba(0, 0, 0, 0.217);
-  margin: 2px;
+  margin: 1em;
   flex: 1;
   border-radius: 5px;
 }
 
 #black p{
   color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 1em;
 }
 
 #white{
   background-color: rgb(255, 255, 255);
-  max-width: 250px;
-  height: 300px;
+  max-width: 30em;
+  height: 18em;
   border: 1px solid rgba(0, 0, 0, 0.217);
-  margin: 2px;
+  margin: 1em;
   flex: 1;
   border-radius: 5px;
 }
 
 #white p{
   color: rgb(0, 0, 0);
-  padding: 20px;
+  padding: 1em;
 }
 
 #gray{
   background-color: rgb(68, 80, 99);
-  max-width: 250px;
-  height: 300px;
+  max-width: 30em;
+  height: 18em;
   border: 1px solid rgba(0, 0, 0, 0.217);
-  margin: 2px;
+  margin: 1em;
   flex: 1;
   border-radius: 5px;
 }
 
 #gray p{
   color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 1em;
 }
 
 #blue{
   background-color: rgb(16, 115, 255);
-  max-width: 250px;
-  height: 300px;
+  max-width: 30em;
+  height: 18em;
   border: 1px solid rgba(0, 0, 0, 0.217);
-  margin: 2px;
+  margin: 1em;
   flex: 1;
   border-radius: 5px;
 }
 
 #blue p{
   color: rgb(255, 255, 255);
-  padding: 20px;
+  padding: 1em;
 }
 
 /* Decoration */
@@ -289,70 +327,36 @@ fieldset{
   padding-top: 30px;
 }
 
-#total{
-  margin-top: 10em;
-  flex: 1;
-}
 
 .sample{
-  max-width: 400px;
-  margin-top: 10px;
-  flex:1;
+  max-width: 30em;
+  margin-top: 2em;
+  flex: 1;
 }
 
 .rendered{
-  max-width: 400px;
-  margin-top: 10px;
+  max-width: 40em;
   flex:1;
-  padding-left: 40px;
-  padding-top: 30px;
+  padding-left: 2em;
 }
 
-.poster-one{
+.poster-listing {
   flex: 1;
   margin-left: 2em;
   margin-top: 2em;
   background-color: rgba(222, 222, 222, 0.151);
-  max-width: 350px;
-}
-
-.poster-two{
-  flex: 1;
-  margin-left: 2em;
-  margin-top: 2em;
-  background-color: rgba(222, 222, 222, 0.151);
-  max-width: 350px;
-}
-
-#poster-three{
-  flex: 1;
-  margin-left: 2em;
-  margin-top: 2em;
-  background-color: rgba(222, 222, 222, 0.151);
-  max-width: 350px;
-}
-
-#poster-four{
-  flex: 1;
-  margin-left: 2em;
-  margin-top: 2em;
-  background-color: rgba(222, 222, 222, 0.151);
-  max-width: 350px;
+  max-width: 22em;
 }
 
 .listing-content{
-  padding-left: 20px;
+  padding-left: 1.5em;
 }
 
 .branding-container{
   flex-direction: row;
 }
 
-.branding-one{
-  flex: 1;
-}
-
-.branding-two{
+.branding{
   flex: 1;
 }
 
