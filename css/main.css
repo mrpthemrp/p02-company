@@ -210,6 +210,10 @@ input{
     border-bottom: 2px solid var(--blue-light);
 }
 
+.search-bar{
+    margin-bottom: 1rem;
+}
+
 .search-bar:hover, .search-bar:focus,.search-bar:active{
     border-color: var(--grey-darkest);
 }
