@@ -198,13 +198,18 @@
                     <div class="listing-content">
                         <h4>Nike SB Dunk Low Poster</h4>
                         <p class="price">$25</p>
-                        <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue">View Details</a>
                         <div>
                             <!-- Quantity input  -->
-                            <label>
-                                Quantity
-                                <input type="text" class="search-bar" size="2">
-                            </label>
+                            <label for="quantity">Quantity:</label>
+
+                            <select name="quantity">
+                              <option value="one">1</option>
+                              <option value="two">2</option>
+                              <option value="three">3</option>
+                              <option value="four">4</option>
+                              <option value="five">5</option>
+                              <option value="six">6</option>
+                            </select>
                         </div>
                     </div>
                     <!-- Add to cart button -->
@@ -280,18 +285,17 @@
                     <section class="container">
 
                         <!-- Cart item 1 -->
-                        <div id="product-one">
-                            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img src="img/Jordan1.jpg"
+                        <div class="product-cart">
+                            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img src="../img/Jordan1.jpg"
                                                                                                          alt="Jordan 1 University Blue" width="175" height="250"></a>
                             <h4>Jordan 1 University Blue Poster</h4>
                             <p class="price">$25</p>
                             <a class="button-nav" href="#">Edit</a>
                             <a class="button-nav" href="#">Delete</a>
-                            <a class="button-nav" href="#">Move to Wishlist</a>
                         </div>
 
                         <!-- Cart item 2 -->
-                        <div id="product-two">
+                        <div class="product-cart">
                             <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img
                                     src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike Dunk Low Panda Pigeon" width="175"
                                     height="250"></a>
@@ -299,11 +303,6 @@
                             <p class="price">$25</p>
                             <a class="button-nav" href="#">Edit</a>
                             <a class="button-nav" href="#">Delete</a>
-                            <a class="button-nav" href="#">Move to Wishlist</a>
-                        </div>
-                        <div id="total">
-                            <div>Total: $50</div>
-                            <a class="button-nav" href="#">Checkout</a>
                         </div>
                     </section>
                 </section>
