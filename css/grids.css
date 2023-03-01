@@ -33,14 +33,22 @@
 /*    width: fit-content;*/
 /*}*/
 
+/*LAYOUT */
+
+.content{
+    align-content: center;
+}
+
 
 /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 /*  CAROUSEL */
 
 .carousel-container{
-
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 
 .carousel-item{
-
+    display: none;
 }
