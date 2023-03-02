@@ -307,10 +307,10 @@ input {
     color: var(--grey-dark);
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     text-decoration: none;
-    text-align: center;
+    text-align: start;
 }
 
 .button-display-arrow:hover, .button-display-arrow:focus {
@@ -320,12 +320,23 @@ input {
 }
 
 .h1-display-short{
-    /*max-width: 70%;*/
-    text-overflow: clip;
-    overflow-clip: 2rem;
-    text-space: 1rem;
-
+    word-wrap: break-word;
+    width: 10em;
+    text-transform: uppercase;
 }
+
+.h1-display-italicize{
+    font-style: italic;
+    font-size: 5rem;
+    white-space: break-spaces;
+    position: center;
+}
+
+.text-display-short{
+    word-wrap: break-word;
+    width: 20em;
+}
+
 
 .user-info {
     padding-top: 10px;

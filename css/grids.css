@@ -69,16 +69,16 @@
     margin-bottom: 3rem;
 }
 
-.spacing-15rem{
-    margin-bottom: 10rem;
+.spacing-9rem{
+    margin-bottom: 9rem;
 }
 
 /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 /*  CAROUSEL */
 
 .carousel-container{
-    max-width: 100%;
-    position: relative;
+    width: 100%;
+    position: center;
     margin: auto;
 }
 
