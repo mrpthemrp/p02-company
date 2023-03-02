@@ -101,7 +101,7 @@ a {
 }
 
 a:hover img {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 input {
@@ -404,34 +404,6 @@ header p {
 
 /*  //  END OF GENERAL //  */
 
-/* RESPONSIVE STRUCTURES */
-@media (max-width: 600px) {
-    p {
-        max-width: 90%;
-    }
-
-    .navBar-item {
-        font-size: 0.8rem;
-        width: auto;
-        padding: 0.75rem;
-        margin-right: 0.5rem;
-    }
-}
-
-@media (max-width: 300px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .navBar-item {
-        font-size: 0.25rem;
-        width: auto;
-        padding: 0.65rem;
-        margin-right: 0.25rem;
-    }
-}
-
-/*  //  END OF RESPONSIVE STRUCTURES //  */
 
 /* CHECKOUT CART */
 .checkout-cart {
@@ -491,6 +463,7 @@ header p {
 .colors img{
    border: none;
 }
+
 
 .flex-row {
     display: flex;
@@ -612,4 +585,8 @@ footer {
 
 .footer-text {
     font-size: 0.6em;
+}
+
+@media (max-width: 702px){
+    
 }
