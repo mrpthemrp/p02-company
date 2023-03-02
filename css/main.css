@@ -326,10 +326,12 @@ input {
 }
 
 .h1-display-italicize{
+    display: inline-block;
+    text-align:justify;
     font-style: italic;
-    font-size: 5rem;
-    white-space: break-spaces;
-    position: center;
+    font-size: 3.5rem;
+    width: 3.7rem;
+    white-space: nowrap;
 }
 
 .text-display-short{
