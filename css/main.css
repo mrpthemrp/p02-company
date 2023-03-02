@@ -588,3 +588,20 @@ footer {
 @media (max-width: 702px){
     
 }
+
+/* STAR STYLING REVIEW */
+.star-container{
+
+}
+
+.star-items{
+
+}
+
+.material-symbols-outlined {
+     font-variation-settings:
+             'FILL' 1,
+             'wght' 300,
+             'GRAD' 0,
+             'opsz' 48
+ }
