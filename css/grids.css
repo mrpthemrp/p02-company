@@ -1,7 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-
 /* 2 COLUMN GRID SYSTEM*/
 
 /*!*https://www.w3schools.com/css/css_grid.asp*!*/
@@ -39,70 +35,83 @@
 
 /*LAYOUT */
 
-.content{
-    display: block;
-    position: absolute;
-    margin: 2rem;
-}
-
-.content section{
-    margin: 0;
-    padding: 0;
-}
-
-.content-grid-2-cols{
+.content {
     display: grid;
+    align-content: center;
+    justify-content: center;
     align-items: center;
-    margin: 1rem;
-    column-gap: 1.5rem;
+    justify-items: center;
 }
 
-.content-grid-item-1{
-    grid-column: 1;
-    position: relative;
-}
-
-.content-grid-item-2{
-    grid-column: 2;
+.content section {
     margin: 0;
     padding: 0;
-    position: relative;
 }
 
-.spacing-3rem{
+.content-flex-2-cols {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.content-flex-item-1 {
+    place-items: flex-start;
+    flex: 1;
+}
+
+.content-flex-item-2 {
+    margin-top: 2em;
+    flex: 2;
+}
+
+.spacing-3rem {
     margin-bottom: 3rem;
 }
 
-.spacing-9rem{
+.spacing-5rem {
+    margin-bottom: 5rem;
+}
+
+.spacing-9rem {
     margin-bottom: 9rem;
 }
 
 /*https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 /*  CAROUSEL */
 
-.carousel-container{
+.carousel-container {
     width: 100%;
     position: center;
     margin: auto;
     display: grid;
+    justify-content: end;
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
 }
 
-.carousel-item{
+.carousel-item {
     display: block;
 }
 
-.carousel-item:nth-of-type(1){
+.carousel-item:nth-of-type(1) {
     grid-column: 1;
 }
-.carousel-item:nth-of-type(2){
+
+.carousel-item:nth-of-type(2) {
     grid-column: 2;
 }
-.carousel-item:nth-of-type(3){
+
+.carousel-item:nth-of-type(3) {
     grid-column: 3;
 }
-.carousel-item:nth-of-type(4){
+
+.carousel-item:nth-of-type(4) {
     grid-column: 4;
 }
+
 /*!* Next & previous buttons *!*/
 /*.prev, .next {*/
 /*    cursor: pointer;*/
