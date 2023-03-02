@@ -110,7 +110,7 @@ a:focus img {
 
 input {
     border: 1px solid lightgray;
-    border-radius: 10px;
+    border-radius: 2em;
     height: 1.75rem;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -162,7 +162,6 @@ input {
 
 .search-bar {
     margin-bottom: 1rem;
-    border-radius: 0;
 }
 
 .search-bar:hover, .search-bar:focus, .search-bar:active {
