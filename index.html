@@ -6,6 +6,7 @@
     <title>Posterized Kicks</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/grids.css" rel="stylesheet" type="text/css">
+    <link href="css/nav-bar.css" rel="stylesheet" type="text/css">
     <link href="js/main.js" rel="script">
 
     <!-- Imported Google Fonts -->
@@ -22,25 +23,35 @@
 
 <body>
 <header>
-    <nav>
+    <nav class="menu" id="menuOverlay">
         <img class="nav-img" src="img/PK_logo.png" alt="Posterized Kicks Logo" width="268" height="45">
-        <div>
-            <a href="#">Home</a>
-            <a href="pages/new_releases.html">New Releases</a>
-            <a href="pages/posters.html">Posters</a>
-            <a href="pages/customize.html">Customize</a>
-            <a href="pages/about.html">About</a>
-        </div>
-        <div class="search-cart">
-            <form>
-                <label>
-                    <input type="text" placeholder="Search..." class="search-bar">
-                </label>
-            </form>
+        <button id="menuBtn" class="hamburger" onClick="menuToggleNew()">
+            <div class="line1"></div>
+            <div id= "menuLine2" class="line2"></div>
+            <div class="line3"></div>
+        </button>
+        <ul class="hamburger">
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/new_releases.html">New Releases</a></li>
+            <li><a href="pages/posters.html">Posters</a></li>
+            <li><a href="pages/customize.html">Customize</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li>
+                <div class="search-cart">
+                    <form>
+                        <label>
+                            <input type="text" placeholder="Search..." class="search-bar">
+                        </label>
+                    </form>
+                </div>
+            </li>
             <!-- shopping cart -->
-            <a href="pages/checkout.html"><img class="nav-img" src="img/cart_icon.png" alt="Shopping cart" width="25"
-                                               height="25"></a>
-        </div>
+            <li>
+                <a href="pages/checkout.html">
+                    <img class="nav-img" src="img/cart_icon.png" alt="Shopping cart" width="25" height="25">
+                </a>
+            </li>
+        </ul>
     </nav>
 </header>
 
