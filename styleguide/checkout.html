@@ -37,99 +37,79 @@
 
     <h3>Checkout</h3>
 
-    <!-- Cart -->
-    <div class="container"></div>
-    <h3>My Cart</h3>
-    <section class="container-checkout">
+    <!-- Checkout Cart -->
+    <h3>Checkout Cart</h3>
+    <section class="container">
+
         <!-- Cart item 1 -->
-        <div id="product-one">
-            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img src="../img/Jordan1.jpg"
-                    alt="Jordan 1 University Blue" width="175" height="250"></a>
+        <div class="product-cart">
+            <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img
+                    src="../img/Jordan1.jpg" alt="Jordan 1 University Blue" width="175"
+                    height="250"></a>
             <h4>Jordan 1 University Blue Poster</h4>
             <p class="price">$25</p>
             <a class="button-nav" href="#">Edit</a>
             <a class="button-nav" href="#">Delete</a>
-            <a class="button-nav" href="#">Move to Wishlist</a>
         </div>
 
         <!-- Cart item 2 -->
-        <div id="product-two">
+        <div class="product-cart">
             <a href="https://www.nike.com/sg/launch/t/air-jordan-1-university-blue"><img
-                    src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike Dunk Low Panda Pigeon" width="175" height="250"></a>
+                    src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike Dunk Low Panda Pigeon" width="175"
+                    height="250"></a>
             <h4>Nike Dunk Low Panda Pigeon Poster</h4>
             <p class="price">$25</p>
             <a class="button-nav" href="#">Edit</a>
             <a class="button-nav" href="#">Delete</a>
-            <a class="button-nav" href="#">Move to Wishlist</a>
-        </div>
-        <!-- Total amount -->
-        <div id="total">
-            <div>Total: $50</div>
-            <a class="button-nav" href="#">Checkout</a>
         </div>
     </section>
 
-    <!-- Payment information -->
+    <!-- Payment Form -->
     <h3>Payment Form</h3>
     <form>
-        <fieldset>
-            <div class="deliveryoptions">
-                <h3>Delivery Options</h3>
-
-                <label>
-                    <input type="radio" name="options" value="option1">Ship
-                </label>
-                <label>
-                    <input type="radio" name="options" value="option2">Pick Up
-                </label>
-            </div>
-
-            <!-- User Information -->
-            <div class="user-info">
-                <label>
-                    First Name
-                    <input type="text" class="search-bar" name="firstname">
-                </label>
-                <label>
-                    Last Name
-                    <input type="text" class="search-bar" name="lastname">
-                </label>
-                <label>
-                    Address
-                    <input type="text" class="search-bar" name="address">
-                </label>
-            </div>
-
-            <!-- Payment Method-->
-            <h3>Payment Method</h3>
-            <div class="paymentmethod">
-                <label>
-                    <input type="radio" name="options" value="option1">Debit or Credit Card
-                </label>
-                <label>
-                    <input type="radio" name="options" value="option2">Paypal
-                </label>
-            </div>
-
-            <!-- Payment Information -->
-            <h3>Payment Information</h3>
-            <div class="payment-info">
-                <label>
-                    Card Number
-                    <input type="text" class="search-bar" name="cardnumber">
-                </label>
-                <label>
-                    CVV
-                    <input type="text" class="search-bar" name="cvv">
-                </label>
-                <label>
-                    Expiration Date
-                    <input type="text" class="search-bar" name="expirydate" size="4">
-                </label>
-            </div>
-            <a class="button-nav" href="#">Pay</a>
-        </fieldset>
-    </form>
+        <div class="payment-methods">
+            <h4>Payment Methods</h4>
+          <label>
+            <input type="radio" name="payment-method" value="credit-card">
+            <span class="method-label">Debit or Credit</span>
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="paypal">
+            <span class="method-label">Paypal</span>
+          </label>
+        </div>
+        <div class="form-fields">
+          <div class="input-row">
+            <label>                             
+              <input type="text" name="first-name" required>
+              First Name
+            </label>
+            <label>
+              <input type="text" name="last-name" required>
+              Last Name
+            </label>
+          </div>
+          <div class="input-row">
+            <label>
+              <input type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••" required>
+              Credit Card Number
+            </label>
+            <label>
+              <input type="text" name="security-code" placeholder="CVV" required>
+              Security Code
+            </label>
+          </div>
+          <div class="input-row">
+            <label>
+              <input type="text" name="card-expiration" placeholder="MM / YY" required>
+              Card Expiration
+            </label>
+          </div>
+        </div> 
+        <div class="payment-button-div">
+            <a class="button-nav" href="#">Submit Order</a>
+        </div>                   
+      </form>
     </div>
 </div>
 </body>
