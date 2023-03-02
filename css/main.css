@@ -344,7 +344,6 @@ fieldset {
 }
 
 .poster-listing {
-    flex: 1;
     margin-left: 2em;
     margin-top: 2em;
     background-color: rgba(222, 222, 222, 0.151);
@@ -438,12 +437,12 @@ header p {
 .checkout-cart {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 20px;
     max-width: 45em;
     background-color: #ffffff;
     border-radius: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
 }
 
 .cart-items {
@@ -519,6 +518,7 @@ header p {
     border-radius: 2px;
     max-width: 80em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
 }
 
 .payment-methods {
@@ -557,17 +557,18 @@ header p {
     margin-bottom: 0.7em;
 }
 
+select{
+    margin: 0;
+    margin-top: 1em;
+}
 .form-fields input[type="text"] {
     padding: 0.5em;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 3px;
     width: 100%;
     box-sizing: border-box;
     margin: 0;
   }
-
-  .payment-button-div{
-}
 
 .payment-button-div {
     border-top: 0.15em solid rgb(210, 210, 210);
