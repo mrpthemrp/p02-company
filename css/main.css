@@ -59,7 +59,7 @@ p {
 
 img {
     border: 1px solid var(--grey-light);
-    border-radius: 3px;
+    border-radius: 1rem;
 }
 
 .nav-img {
@@ -172,6 +172,7 @@ input {
 /* button css */
 .button-nav {
     border: 1px solid var(--black);
+    border-radius: 1em;
     display: inline-block;
     padding: 0.5em 0.75em;
     font-family: 'Source Sans Pro', sans-serif;
@@ -182,7 +183,6 @@ input {
     text-align: center;
     color: var(--white-bkdg);
     background: var(--black);
-    -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     min-width: 9em;
     margin-top: 3em;
@@ -269,12 +269,13 @@ input {
 }
 
 .h1-display-italicize{
-    display: inline-block;
-    text-align:justify;
+    display: contents;
+    text-align: justify;
     font-style: italic;
-    font-size: 3.5rem;
+    font-size: 6vw;
     width: 3.7rem;
     white-space: nowrap;
+
 }
 
 .text-display-short{
