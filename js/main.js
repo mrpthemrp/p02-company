@@ -13,3 +13,23 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+'use strict';
+
+// FSM VARIABLES
+let state = 0;
+
+// MENU THINGS
+function menuToggleNew() {
+    let menuBtn = document.querySelector('#menuBtn');
+    menuBtn.classList.toggle("hidden");
+    menuLookToggle(menuBtn);
+}
+
+function menuLookToggle(x) {
+    x.classList.toggle("change");
+    if (state === 0) {
+        state = 1;
+    } else {
+        state = 0;
+    }
+}
