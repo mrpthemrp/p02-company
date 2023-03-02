@@ -125,9 +125,7 @@ nav a:hover, nav a:focus{
   color: rgb(0, 0, 0);
 }
 
-a:hover img{
-	transform: scale(1.01);
-}
+
 
 .search-bar:hover{
 	background: #d2d2d213;
@@ -180,7 +178,11 @@ a:hover img{
   min-width: 27em;
 }
 
-
+.button-nav-cart:hover, .button-nav-cart:focus {
+  color: rgb(16, 115, 255);
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+}
 
 /* PAYMENT FORM CODE */
 
