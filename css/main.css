@@ -64,7 +64,7 @@ img {
 
 .nav-img {
     border: none;
-    margin-top: 0.5em;
+    margin-top: 0.6em;
 }
 
 nav {
@@ -222,9 +222,14 @@ select {
 }
 
 .button-nav-cart:hover, .button-nav-cart:focus {
-    color: var(--blue-light);
-    background: var(--white-bkdg);
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 45em;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .button-display {
