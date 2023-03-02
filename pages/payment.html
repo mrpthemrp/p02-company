@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/grids.css" rel="stylesheet" type="text/css">
+
+    <!-- Imported Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+        <img class="nav-img" src="../img/PK_logo.png" alt="Posterized Kicks Logo" width="268" height="45">
+        <div>
+        <a href="../index.html">Home</a>   
+        <a href="new_releases.html">New Releases</a>
+        <a href="posters.html">Posters</a>
+        <a href="customize.html">Customize</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="search-cart">
+        <form>
+            <label>
+                <input type="text" placeholder="Search..." class="search-bar">
+            </label>
+        </form>
+        <!-- shopping cart -->
+        <a href="checkout.html"><img class="nav-img" src="../img/cart_icon.png" alt="Shopping cart" width="25" height="25"></a>
+    </div>
+    </nav>
+</header>
+    <section class="grid">
+    <!-- Payment Form -->
+    <h3>Payment Form</h3>
+    <form class="checkout-form">
+        <div class="payment-methods">
+            <h4>Payment Methods</h4>
+          <label>
+            <input type="radio" name="payment-method" value="credit-card">
+            <span class="method-label">Debit or Credit</span>
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="paypal">
+            <span class="method-label">Paypal</span>
+          </label>
+        </div>
+        <div class="form-fields">
+          <div class="input-row">
+            <label>                             
+              <input type="text" name="first-name" required>
+              First Name
+            </label>
+            <label>
+              <input type="text" name="last-name" required>
+              Last Name
+            </label>
+          </div>
+          <div class="input-row">
+            <label>
+              <input type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••" required>
+              Credit Card Number
+            </label>
+            <label>
+              <input type="text" name="security-code" placeholder="CVV" required>
+              Security Code
+            </label>
+          </div>
+          <div class="input-row">
+            <label>
+              <input type="text" name="card-expiration" placeholder="MM / YY" required>
+              Card Expiration
+            </label>
+          </div>
+        </div> 
+        <div class="payment-button-div">
+            <a class="button-nav" href="#">Submit Order</a>
+        </div>                   
+      </form>
+      </section>
+</body>
+
+</html>
