@@ -64,7 +64,7 @@ img {
 
 .nav-img {
     border: none;
-    margin-top: 0.6em;
+    margin-top: 0.5em;
 }
 
 nav {
@@ -311,6 +311,13 @@ select {
     justify-content: center;
 }
 
+.container-about {
+    margin: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
 .container-two {
     display: flex;
     flex-wrap: nowrap;
@@ -428,36 +435,12 @@ fieldset {
     padding-top: 30px;
 }
 
-.poster-one {
+.poster-listing {
     flex: 1;
     margin-left: 2em;
     margin-top: 2em;
     background-color: rgba(222, 222, 222, 0.151);
-    max-width: 350px;
-}
-
-.poster-two {
-    flex: 1;
-    margin-left: 2em;
-    margin-top: 2em;
-    background-color: rgba(222, 222, 222, 0.151);
-    max-width: 350px;
-}
-
-#poster-three {
-    flex: 1;
-    margin-left: 2em;
-    margin-top: 2em;
-    background-color: rgba(222, 222, 222, 0.151);
-    max-width: 350px;
-}
-
-#poster-four {
-    flex: 1;
-    margin-left: 2em;
-    margin-top: 2em;
-    background-color: rgba(222, 222, 222, 0.151);
-    max-width: 350px;
+    max-width: 22em;
 }
 
 .listing-content {
@@ -628,6 +611,10 @@ header p {
     display: block;
     margin-bottom: 0.7em;
     font-size: 0.9em;
+    color: #2b2b2b;
+  }
+  
+  .form-fields .input-row {
     color: #555;
 }
 
@@ -646,6 +633,10 @@ header p {
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
+  }
+
+  .payment-button-div{
 }
 
 .payment-button-div {
@@ -665,6 +656,10 @@ header p {
 .search-cart {
     display: flex;
     flex-direction: row;
+}
+
+#PKLogo-about{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* FOOTER STYLING */
