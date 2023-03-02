@@ -116,6 +116,14 @@ input {
     padding: 0.5rem;
 }
 
+select{
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+    height: 2.5em;
+    margin: 0.5rem;
+    padding: 0.5em;
+}
+
 /*  //  END OF NORMALIZE //  */
 
 
