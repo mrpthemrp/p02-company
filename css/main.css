@@ -454,9 +454,7 @@ header p {
 }
 
 .colors{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
+    gap: 1em;
     margin-bottom: 1em;
 }
 
