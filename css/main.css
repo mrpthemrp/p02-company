@@ -60,11 +60,12 @@ p {
 
 img {
     border: 1px solid var(--grey-light);
+    border-radius: 0.3em;
 }
 
 .nav-img {
     border: none;
-    margin-top: 0.6em;
+    margin-top: 0.5em;
 }
 
 nav {
@@ -101,11 +102,6 @@ a {
 
 a:hover img {
     transform: scale(1.01);
-}
-
-a:focus img {
-    border: 2px solid var(--grey-darkest);
-    border-radius: 10px;
 }
 
 input {
@@ -309,6 +305,14 @@ select {
     justify-content: center;
 }
 
+.container-customize {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    margin: 3em;
+}
+
 .container-about {
     margin: 3em;
     display: flex;
@@ -328,109 +332,15 @@ select {
     max-width: 70em;
 }
 
-#black {
-    background-color: rgb(0, 0, 0);
-    max-width: 250px;
-    height: 300px;
-    border: 1px solid var(--grey-dark);
-    margin: 2px;
-    flex: 1;
-    border-radius: 5px;
-}
-
-#black p {
-    color: var(--white-bkdg);
-    padding: 20px;
-}
-
-#white {
-    background-color: white;
-    max-width: 250px;
-    height: 300px;
-    border: 1px solid var(--grey-dark);
-    margin: 2px;
-    flex: 1;
-    border-radius: 5px;
-}
-
-#white p {
-    color: rgb(0, 0, 0);
-    padding: 20px;
-}
-
-#gray {
-    background-color: rgb(68, 80, 99);
-    max-width: 250px;
-    height: 300px;
-    border: 1px solid var(--grey-dark);
-    margin: 2px;
-    flex: 1;
-    border-radius: 5px;
-}
-
-#gray p {
-    color: var(--white-bkdg);
-    padding: 20px;
-}
-
-#blue {
-    background-color: var(--blue-light);
-    max-width: 250px;
-    height: 300px;
-    border: 1px solid var(--grey-dark);
-    margin: 2px;
-    flex: 1;
-    border-radius: 5px;
-}
-
-#blue p {
-    color: var(--white-bkdg);
-    padding: 20px;
-}
-
 /* Decoration */
 fieldset {
     border-color: #a4a4a456;
 }
 
-#product-one {
-    max-width: 400px;
-    flex: 1;
-    padding-left: 30px;
-    padding-top: 30px;
-}
-
-#product-two {
-    max-width: 400px;
-    flex: 1;
-    padding-left: 30px;
-    padding-top: 30px;
-}
-
-#product-three {
-    max-width: 400px;
-    flex: 1;
-    padding-left: 30px;
-    padding-top: 30px;
-}
 
 #total {
     margin-top: 10em;
     flex: 1;
-}
-
-.sample {
-    max-width: 400px;
-    margin-top: 10px;
-    flex: 1;
-}
-
-.rendered {
-    max-width: 400px;
-    margin-top: 10px;
-    flex: 1;
-    padding-left: 40px;
-    padding-top: 30px;
 }
 
 .poster-listing {
@@ -442,7 +352,7 @@ fieldset {
 }
 
 .listing-content {
-    padding-left: 20px;
+    padding-left: 1.5em;
 }
 
 .branding-container {
@@ -543,6 +453,12 @@ header p {
     margin-bottom: 20px;
 }
 
+.customization{
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+}
+
 .cart-summary {
     margin: 0;
     width: 100%;
@@ -564,6 +480,17 @@ header p {
     padding: 1em;
     border-bottom: 0.15em solid rgb(210, 210, 210);
     max-width: 40em;
+}
+
+.colors{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.colors img{
+   border: none;
 }
 
 .flex-row {
