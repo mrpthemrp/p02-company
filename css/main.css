@@ -285,7 +285,6 @@ select {
     width: 20em;
 }
 
-
 .user-info {
     padding-top: 10px;
 }
@@ -303,12 +302,14 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container-customize {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 3em;
     margin: 3em;
 }
