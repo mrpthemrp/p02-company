@@ -321,6 +321,7 @@ select {
     justify-content: center;
     gap: 2em;
 }
+
 .container-two {
     display: flex;
     flex-wrap: nowrap;
@@ -425,7 +426,7 @@ header p {
     margin-bottom: 20px;
 }
 
-.customization{
+.customization {
     display: flex;
     flex-direction: column;
     max-width: 30em;
@@ -454,13 +455,13 @@ header p {
     max-width: 40em;
 }
 
-.colors{
+.colors {
     gap: 1em;
     margin-bottom: 1em;
 }
 
-.colors img{
-   border: none;
+.colors img {
+    border: none;
 }
 
 
@@ -504,7 +505,7 @@ header p {
     margin-left: 0.3em;
 }
 
-.form-message{
+.form-message {
     height: 4em;
     line-height: inherit;
 }
@@ -514,9 +515,9 @@ header p {
     margin-bottom: 0.7em;
     font-size: 0.9em;
     color: #2b2b2b;
-  }
-  
-  .form-fields .input-row {
+}
+
+.form-fields .input-row {
     color: #555;
 }
 
@@ -529,10 +530,11 @@ header p {
     margin-bottom: 0.7em;
 }
 
-select{
+select {
     margin: 0;
     margin-top: 1em;
 }
+
 .form-fields input[type="text"] {
     padding: 0.5em;
     border: 1px solid #ccc;
@@ -540,7 +542,7 @@ select{
     width: 100%;
     box-sizing: border-box;
     margin: 0;
-  }
+}
 
 .payment-button-div {
     border-top: 0.15em solid rgb(210, 210, 210);
@@ -561,7 +563,7 @@ select{
     flex-direction: row;
 }
 
-#PKLogo-about{
+#PKLogo-about {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -586,28 +588,32 @@ footer {
     font-size: 0.6em;
 }
 
-@media (max-width: 702px){
-    
+@media (max-width: 702px) {
+
 }
 
 /* STAR STYLING REVIEW */
-.star-container{
-
+.star-container {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    width: fit-content;
 }
 
-.star-items{
+.star-items {
     display: block;
     width: fit-content;
 }
 
-.star-items img{
+.star-items img {
     border: none;
 }
 
-.star-items:hover, .star-items:focus{
+.star-items:hover, .star-items:focus {
     cursor: pointer;
 }
 
-.star-items img:hover, .star-items img:focus{
+.star-items img:hover, .star-items img:focus {
     scale: 110%;
 }
