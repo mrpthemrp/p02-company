@@ -33,3 +33,56 @@ function menuLookToggle(x) {
         state = 0;
     }
 }
+
+
+// STAR REVIEW
+//reference: https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick
+
+function rating(starNumber) {
+    let imgID = "star" + starNumber.toString();
+    let stars = document.getElementById("starContainer").children;
+    let clear;
+
+    if(document.getElementById(imgID).getAttribute('src') ===
+        "../img/star_fill.svg"){
+        clear = true;
+        clearRating();
+    } else{
+        clear = false;
+    }
+
+    for (let i = 0; i < starNumber; i++) {
+        let starDivID = stars[i].id;
+        let starImgID = document.getElementById(starDivID).firstElementChild.id;
+
+        if(clear){
+            toggleStarToOutline(starImgID);
+        } else {
+            toggleStarToFill(starImgID);
+        }
+    }
+
+}
+
+function toggleStarToFill(starId) {
+    let star = document.getElementById(starId);
+    if (star.getAttribute('src') === "../img/star_outline.svg") {
+        star.src = "../img/star_fill.svg";
+    }
+}
+
+function toggleStarToOutline(starId) {
+    let star = document.getElementById(starId);
+    if (star.getAttribute('src') === "../img/star_fill.svg") {
+        star.src = "../img/star_outline.svg";
+    }
+}
+
+function clearRating() {
+    let stars = document.getElementById("starContainer").children;
+    for (let i = 0; i < 5; i++) {
+        let starDivID = stars[i].id;
+        let starImgID = document.getElementById(starDivID).firstElementChild.id;
+        toggleStarToOutline(starImgID);
+    }
+}
