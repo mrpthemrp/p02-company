@@ -303,11 +303,21 @@ select {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 2em;
 }
 
 .container-customize {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 3em;
+}
+
+.container-newrelease {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3em;
