@@ -307,6 +307,15 @@ select {
     flex-wrap: wrap;
     padding-bottom: 2em;
     padding-top: 2em;
+}
+
+.container-posters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    padding-top: 2em;
     margin-left: 18em;
 }
 
