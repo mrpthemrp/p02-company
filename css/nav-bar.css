@@ -15,24 +15,23 @@
 /* HAMBURGER MENU ICON */
 
 .hamburger {
-    margin: 2rem;
+    display: none;
+    margin: inherit;
     top: 0;
-    right: 0;
-    position: fixed;
+    right: 0.2rem;
+    position: sticky;
     cursor: pointer;
     color: transparent;
-    z-index: 10;
     border-color: transparent;
     background-color: transparent;
-    width: 5rem;
-    height: 5rem;
+    z-index: 99;
 }
 
 .line1, .line2, .line3 {
-    width: 3rem;
-    height: 0.5rem;
-    margin: 0.6rem 0.5rem;
-    background-color: #284d35;
+    width: 2.15rem;
+    height: 0.4em;
+    margin: 0.2rem;
+    background-color: var(--grey-darkest);
     transition: ease-out 0.3s;
 }
 
@@ -42,15 +41,19 @@
 
 .change .line2 {
     transform: scale(0.95);
-    opacity: 0%;
+    opacity: 0;
 }
 
 .change .line3 {
     transform: rotate(45deg) translate(-0.5rem, -0.6rem) scale(0.95);
 }
+
+.hidden{
+    display: block;
+}
 /** END OF HAMBURGER MENU **/
 
-/* HAMBURGER MENU + MEDIA QUERY */
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 900px) {
     .menu ul{
@@ -58,8 +61,27 @@
     }
 
     .hamburger{
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menuOverlay{
+        z-index: 7;
+        position: fixed;
+        margin: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--white-bkdg);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: 0.5s ease-out;
+    }
+
+    .hidden{
+        display: none;
     }
 }
 
-/** END OF HAMBURGER MENU + MEDIA QUERY **/
+/** END OF MEDIA QUERIES **/
