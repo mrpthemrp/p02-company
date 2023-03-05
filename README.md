@@ -10,7 +10,7 @@ This repository contains a website developed with HTML, CSS, and JavaScript.
 This project is not intended to be open-source, feel free to use it as a reference but DO NOT FORK OR COPY!  
 If used as reference, please cite by providing link to project and author name \([see section below](#2-citation-format)\).
 
-Link to final website: [PosterizedKicks]()
+**Link to final website: [PosterizedKicks]()**
 
 ## :bookmark_tabs: Table of Contents
 1. [Project Description and Summary](#1-project-description-and-summary)
@@ -20,7 +20,7 @@ Link to final website: [PosterizedKicks]()
 
 ## 1. Project Description and Summary
 
-This project was created as a part of IAT 339 at SIAT SFU (http://www.sfu.ca/siat.html).
+This project was created as a part of IAT 339 at [SIAT SFU](http://www.sfu.ca/siat.html).
 
 UPDATE PROJECT DESCIRPTION
 
