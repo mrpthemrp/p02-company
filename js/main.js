@@ -38,15 +38,14 @@ function menuLookToggle(x) {
 // STAR REVIEW
 //reference: https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick
 
-function rating(starNumber) {
-    let imgID = "star" + starNumber.toString();
-    let stars = document.getElementById("starContainer").children;
+function rating(starNumber,starContainer, imgID) {
+    let stars = document.getElementById(starContainer).children;
     let clear;
 
     if(document.getElementById(imgID).getAttribute('src') ===
         "../img/star_fill.svg"){
         clear = true;
-        clearRating();
+        clearRating(starContainer);
     } else{
         clear = false;
     }
@@ -78,8 +77,8 @@ function toggleStarToOutline(starId) {
     }
 }
 
-function clearRating() {
-    let stars = document.getElementById("starContainer").children;
+function clearRating(starContainer) {
+    let stars = document.getElementById(starContainer).children;
     for (let i = 0; i < 5; i++) {
         let starDivID = stars[i].id;
         let starImgID = document.getElementById(starDivID).firstElementChild.id;
