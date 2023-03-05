@@ -34,6 +34,8 @@ h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
     font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
 h3 {
@@ -91,7 +93,7 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-    color: var(--blue-light);
+    color: var(--black);
     transform: scale(1.06);
 }
 
@@ -333,6 +335,15 @@ select {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+}
+
+.container-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 3em;
 }
 
 .container-two {
@@ -783,4 +794,15 @@ footer {
 .rating-checkbox{
     width: 17px;
     height: 17px;
+}
+
+/* // END OF POSTER PAGE FILTER */
+
+.product-column{
+    display: flex;
+    flex-direction: column;
+}
+
+#product-tags{
+    color:rgb(110, 110, 110);
 }
