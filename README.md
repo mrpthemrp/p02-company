@@ -34,10 +34,10 @@ UPDATE PROJECT DESCIRPTION
 
 ## 2. Citation Format
 Example of citing this project as a reference:
-> Reference used for site design and development: https://github.com/mrpthemrp/p02-company 
+> Reference used for site design and development: https://github.com/mrpthemrp/p02-company  
 > Date Accessed: March 2023  
-> Designers and Developers: [Noah De Guzman](https://github.com/noahdeguzman), [Deborah Wang](https://github.com/mrpthemrp) 
-> Posters created by: [Noah De Guzman](https://github.com/noahdeguzman)
+> Designers and Developers: [Noah De Guzman](https://github.com/noahdeguzman), [Deborah Wang](https://github.com/mrpthemrp)  
+> Posters created by: [Noah De Guzman](https://github.com/noahdeguzman)  
 
 If using this project as a reference please copy and paste the following into your references/citations:
 ```diff
