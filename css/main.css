@@ -813,7 +813,7 @@ footer {
     padding-top: 1em;
     padding-bottom: 1em;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.8em;
     text-transform: uppercase;
     text-decoration: none;
@@ -853,4 +853,80 @@ footer {
     flex-wrap: wrap;
     margin: 2em;
     align-content: center;
+    background-color:rgb(255, 0, 0)C;
+}
+
+.user-review{
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.user-review h4{
+    margin-bottom: 0.5em;
+}
+
+.user-review p{
+    margin-top: 1em;
+}
+
+#view-more{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+}
+
+#view-more span{
+    margin-top: 0.7em;
+}
+
+.review-input{
+    margin: 0;
+    border-radius: 0;
+    width: 44em;
+}
+
+.review-description{
+    margin: 0;
+    border-radius: 0;
+    width: 40em;
+    height: 10em;
+}
+
+textarea{
+    resize: none;
+}
+
+.button-review {
+    border: 1px solid black;
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-bkdg);
+    background: var(--black);
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    margin-bottom: 1.2em;
+    margin-top: 1.5em;
+    width: 30%;
+}
+
+.button-review:hover, .button-review:focus {
+    color: black;
+    background-color: #ffffff;
+}
+
+#review-form{
+        background-color: #ffffff;
+        font-size: 1em;
+        padding: 2em;
+        border-radius: 2px;
+        max-width: 80em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 2em;
 }
