@@ -1,13 +1,10 @@
 /* NAVIGATION STYLING */
-.menu ul{
+.menu{
     display: inline-flex;
-    flex: 2 0 max-content;
+    flex-direction: row;
+    flex: 1 0 max-content;
     align-items: center;
     list-style-type: none;
-    flex-direction: row;
-}
-
-.menu li{
     text-decoration: none;
 }
 /** END OF NAVIGATION STYLING **/
@@ -15,51 +12,78 @@
 /* HAMBURGER MENU ICON */
 
 .hamburger {
-    margin: 2rem;
+    display: none;
     top: 0;
-    right: 0;
-    position: fixed;
+    right: 0.2rem;
+    position: sticky;
     cursor: pointer;
     color: transparent;
-    z-index: 10;
     border-color: transparent;
     background-color: transparent;
-    width: 5rem;
-    height: 5rem;
+    z-index: 99;
 }
 
-.line1, .line2, .line3 {
-    width: 3rem;
-    height: 0.5rem;
-    margin: 0.6rem 0.5rem;
-    background-color: #284d35;
+#menuLine1, #menuLine2, #menuLine3 {
+    width: 1.9rem;
+    height: 0.4em;
+    border-radius: 1rem;
+    background-color: var(--grey-darkest);
     transition: ease-out 0.3s;
+    margin: 0.15rem;
 }
 
-.change .line1 {
-    transform: rotate(-45deg) translate(-1rem,1rem) scale(0.95);
+.transformLine1{
+    transform: rotate(45deg);
 }
 
-.change .line2 {
-    transform: scale(0.95);
-    opacity: 0%;
+.transformLine2{
+    background-color: transparent;
+    transform: rotate(45deg);
+    opacity: 0;
 }
 
-.change .line3 {
-    transform: rotate(45deg) translate(-0.5rem, -0.6rem) scale(0.95);
+.transformLine3{
+    transform: rotate(-44deg) translateX(1em) translateY(-1.1em);
+}
+
+.hidden{
+    display: block;
 }
 /** END OF HAMBURGER MENU **/
 
-/* HAMBURGER MENU + MEDIA QUERY */
+/* MEDIA QUERIES */
 
-@media screen and (max-width: 900px) {
-    .menu ul{
+@media screen and (max-width: 1200px) {
+    .menu {
         flex-direction: column;
     }
 
     .hamburger{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around;
+        justify-content: space-between;
+    }
+
+    #menuOverlay{
+        z-index: 7;
+        position: fixed;
+        margin: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--white-bkdg);
+        overflow-y: scroll;
+        overflow-x: hidden;
+        transition: 0.5s ease-out;
+    }
+
+    .hidden{
+        display: none;
     }
 }
 
-/** END OF HAMBURGER MENU + MEDIA QUERY **/
+/** END OF MEDIA QUERIES **/
