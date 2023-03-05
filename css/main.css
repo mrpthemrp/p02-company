@@ -846,3 +846,11 @@ footer {
     margin-top: 0.2em;
     text-decoration: underline;
 }
+
+.product-reviews{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2em;
+    align-content: center;
+}
