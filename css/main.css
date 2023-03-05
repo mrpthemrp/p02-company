@@ -801,6 +801,13 @@ footer {
 .product-column{
     display: flex;
     flex-direction: column;
+    gap: 0.5em;
+}
+.product-mockup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
 #product-tags{
@@ -935,3 +942,4 @@ textarea{
     color: rgba(0, 52, 165, 0.943);
     margin-bottom: 0.5em;
 }
+
