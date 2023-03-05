@@ -307,8 +307,7 @@ select {
     flex-wrap: wrap;
     padding-bottom: 2em;
     padding-top: 2em;
-    padding-left: 7em;
-    padding-right: 1em;
+    margin-left: 18em;
 }
 
 .container-customize {
@@ -688,6 +687,7 @@ footer {
     flex-direction: row;
     padding-bottom: 2em;
     padding-top: 2em;
+    gap: 3em;
 }
 
 .scrollbox-inner p{
