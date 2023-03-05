@@ -613,13 +613,13 @@ footer {
     width: fit-content;
 }
 
+.star-container img{
+    border: none;
+}
+
 .star-items {
     display: block;
     width: fit-content;
-}
-
-.star-items img {
-    border: none;
 }
 
 .star-items:hover, .star-items:focus {
@@ -642,7 +642,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #565656;
+    background: #929292;
     border-radius: 10px;
 }
 
@@ -658,11 +658,13 @@ footer {
     z-index: 100;
     margin-right: 3em;
     padding-left: 3em;
+    padding-right: 1em;
 }
 
 .scrollbox{
     overflow: auto;
-    padding-right: 10px;
+    padding-right: 30px;
+    visibility: visible;
 }
 
 .scrollbox-inner, .scrollbox:hover {
@@ -692,7 +694,117 @@ footer {
     font-size: 1.2em;
 }
 
+.scrollbox-inner .colors{
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--grey-light);
+}
+
 .brands{
     padding-bottom: 2em;
     border-bottom: 1px solid var(--grey-light);
+}
+
+.btn{
+    width: 4em;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 3px;
+    color: black;
+    font-size: 14px;
+    font-weight: 300 !important;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.active .btn{
+    background: black;
+    color: white;
+}
+
+#price_body{
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--grey-light);
+}
+
+#price_body .line1{
+    height: 2px;
+    width: 100%;
+    background: #eee;
+}
+
+#price_body .line{
+    position: absolute;
+    height: 2px;
+    width: 45%;
+    background: #000000;
+}
+
+#price_body .line:before{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    background: #000000;
+    border-radius: 50%;
+    left: -2px;
+    top: -2px;
+}
+
+#price_body .line:after{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 6px;
+    width: 6px;
+    background: #000000;
+    border-radius: 50%;
+    right: -2px;
+    bottom: -2px;
+}
+
+#price_body ul{
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#price_body ul li{
+    list-style: none;   
+    display: inline-block;
+    color: #d4d4d4;
+}
+
+#price_body ul li:last-child{
+    float: right;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ratings{
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--grey-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-row{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 0.7em;
+}
+
+.rating-row img{
+    padding-top: 0.5em;
+}
+
+.rating-checkbox{
+    width: 17px;
+    height: 17px;
 }
