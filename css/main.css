@@ -87,15 +87,14 @@ nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
-    color: var(--grey-darkest);
+    color: var(--black);
     margin-right: 15px;
     padding-bottom: 10px;
     text-decoration: none;
 }
 
 nav a:hover, nav a:focus {
-    color: var(--black);
-    transform: scale(1.06);
+   border-bottom: 2px solid var(--blue-light);
 }
 
 a {
