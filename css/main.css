@@ -305,6 +305,7 @@ select {
     flex-wrap: wrap;
     padding-bottom: 2em;
     padding-top: 2em;
+    padding-left: 5em;
 }
 
 .container-customize {
@@ -633,4 +634,65 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 3em;
+}
+
+/* POSTER PAGE FILTER */
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #565656;
+    border-radius: 10px;
+}
+
+.sidebar{
+    position: absolute;
+    top: 8em;
+    left: 0;
+    width: 20em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5px 0px 20px;
+    z-index: 100;
+    margin-right: 3em;
+    padding-left: 3em;
+}
+
+.scrollbox{
+    overflow: auto;
+    padding-right: 10px;
+}
+
+.scrollbox-inner, .scrollbox:hover {
+    visibility: visible;
+}
+
+.content{
+    padding-left: 10em;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.scrollbox-inner p{
+    padding-top: 0.5em;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.scrollbox-inner h3{
+    font-size: 1.4em;
+}
+
+.scrollbox-inner h4{
+    margin-top: 0.8em;
+    font-size: 1.2em;
+}
+
+.brands{
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--grey-light);
 }
