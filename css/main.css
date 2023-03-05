@@ -303,7 +303,8 @@ select {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .container-customize {
@@ -626,4 +627,10 @@ footer {
 
 .star-items img:hover, .star-items img:focus {
     scale: 110%;
+}
+
+.price-stars{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
 }
