@@ -19,10 +19,20 @@
 // let state = 0;
 
 // MENU THINGS
-function menuToggleNew() {
+function menuToggle() {
     let menuOverlay = document.querySelector('#menuOverlay');
     let displayState = menuOverlay.classList.toggle('hidden');
-    console.log(displayState);
+    toggleMenuLines();
+}
+
+function toggleMenuLines(){
+    let line1 = document.querySelector('#menuLine1');
+    let line2 = document.querySelector('#menuLine2');
+    let line3 = document.querySelector('#menuLine3');
+
+    line1.classList.toggle('transformLine1');
+    line2.classList.toggle('transformLine2');
+    line3.classList.toggle('transformLine3');
 }
 
 

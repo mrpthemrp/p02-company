@@ -16,7 +16,6 @@
 
 .hamburger {
     display: none;
-    margin: inherit;
     top: 0;
     right: 0.2rem;
     position: sticky;
@@ -27,25 +26,27 @@
     z-index: 99;
 }
 
-.line1, .line2, .line3 {
-    width: 2.15rem;
+#menuLine1, #menuLine2, #menuLine3 {
+    width: 1.9rem;
     height: 0.4em;
-    margin: 0.2rem;
+    border-radius: 1rem;
     background-color: var(--grey-darkest);
     transition: ease-out 0.3s;
+    margin: 0.15rem;
 }
 
-.change .line1 {
-    transform: rotate(-45deg) translate(-1rem,1rem) scale(0.95);
+.transformLine1{
+    transform: rotate(45deg);
 }
 
-.change .line2 {
-    transform: scale(0.95);
+.transformLine2{
+    background-color: transparent;
+    transform: rotate(45deg);
     opacity: 0;
 }
 
-.change .line3 {
-    transform: rotate(45deg) translate(-0.5rem, -0.6rem) scale(0.95);
+.transformLine3{
+    transform: rotate(-44deg) translateX(1em) translateY(-1.1em);
 }
 
 .hidden{
@@ -63,6 +64,10 @@
     .hamburger{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-around;
+        justify-content: space-between;
     }
 
     #menuOverlay{
