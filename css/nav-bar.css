@@ -55,7 +55,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .menu ul{
         flex-direction: column;
     }
