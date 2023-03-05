@@ -34,6 +34,8 @@ h2 {
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
     font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
 h3 {
@@ -51,11 +53,12 @@ h4, h5 {
 }
 
 p {
-    font-size: 1.2em;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    font-size: 1.1em;
+    line-height: 1;
+    letter-spacing: 0.01em;
     max-width: 45em;
     margin-top: 0.5em;
+    color: #3a3a3a;
 }
 
 img {
@@ -84,15 +87,14 @@ nav a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
-    color: var(--grey-darkest);
+    color: var(--black);
     margin-right: 15px;
     padding-bottom: 10px;
     text-decoration: none;
 }
 
 nav a:hover, nav a:focus {
-    color: var(--blue-light);
-    transform: scale(1.06);
+   border-bottom: 2px solid var(--blue-light);
 }
 
 a {
@@ -333,6 +335,15 @@ select {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+}
+
+.container-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 3em;
 }
 
 .container-two {
@@ -783,4 +794,63 @@ footer {
 .rating-checkbox{
     width: 17px;
     height: 17px;
+}
+
+/* // END OF POSTER PAGE FILTER */
+
+.product-column{
+    display: flex;
+    flex-direction: column;
+}
+
+#product-tags{
+    color:rgb(110, 110, 110);
+}
+
+.button-product {
+    border: 1px solid black;
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-bkdg);
+    background: var(--black);
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    margin-bottom: 1.2em;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.button-product:hover, .button-product:focus {
+    color: black;
+    background-color: #ffffff;
+}
+
+.description{
+    margin-top: 2em;
+}
+
+.star-review{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7em;
+}
+
+.star-review p{
+    margin-top: 0.2em;
+    text-decoration: underline;
+}
+
+.product-reviews{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2em;
+    align-content: center;
 }
