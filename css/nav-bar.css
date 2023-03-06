@@ -112,6 +112,24 @@
     .hidden{
         display: none;
     }
+
+    .menu-inside{
+        display: inline-flex;
+        flex-direction: row;
+        margin: 5rem;
+        align-content: space-between;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: max-content;
+        gap: 15rem;
+    }
+
+    #menu-middle{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /** END OF MEDIA QUERIES **/
