@@ -57,10 +57,11 @@
         </div>
     </nav>
 </header>
+
 <section class="grid">
-    <!-- Payment Form -->
-    <h3>Payment Form</h3>
-    <form class="checkout-form">
+        
+    <div class="checkout-form">
+        <h3>Payment Form</h3>
         <div class="payment-methods">
             <h4>Payment Methods</h4>
             <label>
@@ -72,38 +73,33 @@
                 <span class="method-label">Paypal</span>
             </label>
         </div>
-        <div class="form-fields">
-            <div class="input-row">
-                <label>
-                    <input type="text" name="first-name" required>
-                    First Name
-                </label>
-                <label>
-                    <input type="text" name="last-name" required>
-                    Last Name
-                </label>
+        <div class="personal-info">
+            <div>
+                <h4>First Name</h4>
+                <input class="payment-input" type="text" name="first-name">    
             </div>
-            <div class="input-row">
-                <label>
-                    <input type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••" required>
-                    Credit Card Number
-                </label>
-                <label>
-                    <input type="text" name="security-code" placeholder="CVV" required>
-                    Security Code
-                </label>
+            <div>
+                <h4>Last Name</h4>
+                <input class="payment-input" type="text" name="last-name">
             </div>
-            <div class="input-row">
-                <label>
-                    <input type="text" name="card-expiration" placeholder="MM / YY" required>
-                    Card Expiration
-                </label>
+            <div>
+                <h4>Credit Card Number</h4>
+            <input class="payment-input" type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••">
             </div>
+            <div>
+                <h4>Security Code</h4>
+                <input class="payment-input" type="text" name="security-code" placeholder="CVV">
+            </div>  
+            <div>
+                <h4>Card Expiration</h4>
+            <input class="payment-input" type="text" name="card-expiration" placeholder="MM / YY">
+            </div>       
         </div>
         <div class="payment-button-div">
-            <a class="button-nav" href="#">Submit Order</a>
+            <a class="order-button" href="#">Submit Order</a>
         </div>
-    </form>
+    </div>
+
 </section>
 <footer>
     <p class="footer-text">Surrey, BC, Canada</p>
