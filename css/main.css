@@ -224,6 +224,29 @@ select {
     background-color: #ffffff;
 }
 
+.button-checkout{
+    border: 1px solid black;
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-bkdg);
+    background: var(--black);
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    margin-bottom: 1.2em;
+    min-width: 27em;
+}
+
+.button-checkout:hover, .button-checkout:focus{
+    color: black;
+    background-color: #ffffff;     
+}
 .button-display {
     border: 1px solid var(--grey-darkest);
     border-radius: 3rem;
@@ -443,7 +466,8 @@ header p {
 .checkout-cart {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding-left: 2em;
+    padding-top: 2em;
     max-width: 45em;
     background-color: #ffffff;
     border-radius: 2px;
@@ -500,6 +524,8 @@ header p {
 .flex-row {
     display: flex;
     flex-direction: row;
+    
+    align-items: center;
     gap: 22em;
     width: 50em;
 }
@@ -507,6 +533,8 @@ header p {
 #total-price {
     border-top: 0.15em solid rgb(210, 210, 210);
     margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 2em;
     display: flex;
     flex-direction: row;
     gap: 19em;
@@ -821,6 +849,7 @@ footer {
 
 #product-tags{
     color:rgb(110, 110, 110);
+    margin-top: 0;
 }
 
 .button-product {
@@ -849,7 +878,8 @@ footer {
 }
 
 .description{
-    margin-top: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .star-review{
@@ -869,7 +899,7 @@ footer {
     flex-wrap: wrap;
     margin: 2em;
     align-content: center;
-    background-color:rgb(255, 0, 0);
+
 }
 
 .user-review{
@@ -951,4 +981,5 @@ textarea{
     color: rgba(0, 52, 165, 0.943);
     margin-bottom: 0.5em;
 }
+
 
