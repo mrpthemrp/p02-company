@@ -6,6 +6,8 @@
 
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <link href="../css/grids.css" rel="stylesheet" type="text/css">
+    <link href="../css/nav-bar.css" rel="stylesheet" type="text/css">
+    <script src="../js/main.js" rel="script"></script>
 
     <!-- Imported Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,87 +16,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@500&display=swap" rel="stylesheet">
-    <script src="../js/main.js" rel="script"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
 </head>
 <body>
 
 <header>
     <nav>
-        <img class="nav-img" src="../img/PK_logo.png" alt="Posterized Kicks Logo" width="268" height="45">
-        <div>
-            <a href="../index.html">Home</a>
-            <a href="new_releases.html">New Releases</a>
-            <a href="posters.html">Posters</a>
-            <a href="customize.html">Customize</a>
-            <a href="about.html">About</a>
-        </div>
-        <div class="search-cart">
-            <form>
-                <label>
-                    <input type="text" placeholder="Search..." class="search-bar">
-                </label>
-            </form>
-            <!-- shopping cart -->
-            <a href="checkout.html"><img class="nav-img" src="../img/cart_icon.png" alt="Shopping cart" width="25"
-                                         height="25"></a>
-        </div>
-        </nav>
-    </header>
+        <div class="menu">
+            <img class="nav-img" src="../img/PK_logo.png" alt="Posterized Kicks Logo"
+                 width="268" height="45">
+            <button id="menuBtn" class="hamburger" onClick="menuToggle()">
+                <div id="menuLine1"></div>
+                <div id="menuLine2"></div>
+                <div id="menuLine3"></div>
+            </button>
 
-    <section class="container-product">
-        <div class="product-mockup">
+            <div id="menuOverlay" class="hidden">
+                <div class="menu-inside">
+                    <div id="menu-middle">
+                        <a href="../index.html">Home</a>
+                        <a href="new_releases.html">New Releases</a>
+                        <a href="posters.html">Posters</a>
+                        <a href="customize.html">Customize</a>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div id="menu-right-end">
+                        <div class="search-cart">
+                            <form>
+                                <label>
+                                    <input type="text" placeholder="Search..." class="search-bar">
+                                </label>
+                            </form>
+                        </div>
+                        <a href="checkout.html">
+                            <img class="nav-img" src="../img/cart_icon.png" alt="Shopping cart" width="25" height="25">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="container-product">
+    <div class="product-mockup">
         <div class="product-column">
             <a href=""><img src="../img/mockup3.jpg" alt="Mockup 1" width="150" height="150"></a>
             <a href=""><img src="../img/mockup4.png" alt="Mockup 1" width="150" height="150"></a>
         </div>
         <img src="../img/Jordan1-4.png" alt="Jordan 1 Royal Toe" width="470" height="700">
-        </div>
-        <div class="customization">
-            <p id="jordan-collection">Jordan collection</p>
-            <h2>Jordan 1 Royal Toe Poster</h2>
-            <p id="product-tags">Jordan / 1 / Royal Toe</p>
-            <div class="price-stars">
-                <h3>$45</h3>
-                <div class="star-review">
-                    <div id="starContainer" class="star-container resize">
-                        <img id="star1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                        <img id="star2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                        <img id="star3" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                        <img id="star4" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                        <img id="star5" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                    </div>
-                    <a href="#review-form"><p>Write a review</p></a>
-                </div>   
+    </div>
+    <div class="customization">
+        <p id="jordan-collection">Jordan collection</p>
+        <h2>Jordan 1 Royal Toe Poster</h2>
+        <p id="product-tags">Jordan / 1 / Royal Toe</p>
+        <div class="price-stars">
+            <h3>$45</h3>
+            <div class="star-review">
+                <div id="starContainer" class="star-container resize">
+                    <img id="star1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star3" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star4" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star5" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                </div>
+                <a href="#review-form"><p>Write a review</p></a>
+            </div>
         </div>
         <div class="description">
             <h3>Description</h3>
-            <p> Part of the Jordan collection, the Jordan 1 Royal Toe poster is the perfect addition to any sneakerhead's collection.  
-                Featuring the iconic black and blue colorway of the Royal Toe design in a sleek and modern style, this poster is printed on 
-                high-quality paper with a matte finish that looks great from every angle. Whether you're a longtime fan of the Jordan 1 
-                or simply appreciate the iconic design, our limited edition poster is 
+            <p> Part of the Jordan collection, the Jordan 1 Royal Toe poster is the perfect addition to any
+                sneakerhead's collection.
+                Featuring the iconic black and blue colorway of the Royal Toe design in a sleek and modern style, this
+                poster is printed on
+                high-quality paper with a matte finish that looks great from every angle. Whether you're a longtime fan
+                of the Jordan 1
+                or simply appreciate the iconic design, our limited edition poster is
                 a must-have for any true sneaker fan.</p>
         </div>
-            <div>
-                <!-- Quantity input  -->
-                <label for="quantity">Quantity:</label>
-                <select name="quantity">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                </select>
-            </div>
-            <!-- Add to cart button -->
-            <a class="button-product" href="checkout.html">Add to cart</a>
- 
+        <div>
+            <!-- Quantity input  -->
+            <label for="quantity">Quantity:</label>
+            <select name="quantity">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+            </select>
         </div>
-    </section>
+        <!-- Add to cart button -->
+        <a class="button-product" href="checkout.html">Add to cart</a>
 
-    <section class="product-reviews">
-        <div class="review-form">
+    </div>
+</section>
+
+<section class="product-reviews">
+    <div class="review-form">
         <h3>Reviews (8)</h3>
         <div class="user-review">
             <h4>Minimal sneaker poster</h4>
@@ -105,7 +125,9 @@
                 <img id="star4" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
                 <img id="star5" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
             </div>
-            <p>I absolutely love this poster! The high-quality paper with a beautiful matte finish really showcases the sleek design of the Jordan 1 Royal Toe shoe in a minimalist style that makes it the perfect addition to my home decor.</p>
+            <p>I absolutely love this poster! The high-quality paper with a beautiful matte finish really showcases the
+                sleek design of the Jordan 1 Royal Toe shoe in a minimalist style that makes it the perfect addition to
+                my home decor.</p>
         </div>
         <div class="user-review">
             <h4>The colors compliment my office!</h4>
@@ -116,7 +138,8 @@
                 <img id="star4" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
                 <img id="star5" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
             </div>
-            <p>I recently purchased the minimal sneaker poster of the Jordan 1 Royal Toe, and I'm blown away by how stunning it looks.
+            <p>I recently purchased the minimal sneaker poster of the Jordan 1 Royal Toe, and I'm blown away by how
+                stunning it looks.
                 The blue fits nicely in my office space.
             </p>
         </div>
@@ -127,39 +150,39 @@
                 </span>
         </div>
     </div>
-    </section>
-    <section class="product-reviews">
-        
-        <div id="review-form">
-            <h3>Write a review</h3>
-            <h4>Your overall rating</h4>
-            <div id="starContainer" class="star-container resize">
-                <div id="1starRating" class="star-items">
-                    <img onclick=rating(1) id="star1" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-                </div>
-                <div id="2starRating" class="star-items">
-                    <img onclick=rating(2) id="star2" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-                </div>
-                <div id="3starRating" class="star-items">
-                    <img onclick=rating(3) id="star3" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-                </div>
-                <div id="4starRating" class="star-items">
-                    <img onclick=rating(4) id="star4" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-                </div>
-                <div id="5starRating" class="star-items">
-                    <img onclick=rating(5) id="star5" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-                </div>
+</section>
+<section class="product-reviews">
+
+    <div id="review-form">
+        <h3>Write a review</h3>
+        <h4>Your overall rating</h4>
+        <div id="starContainer" class="star-container resize">
+            <div id="1starRating" class="star-items">
+                <img onclick=rating(1) id="star1" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
             </div>
-            <h4>Review Title</h4>
-            <input class="review-input" type="text" name="first-name">
-            <h4>Description</h4>
-            <textarea placeholder="hello" rows=10 cols=78 name="description">
-            </textarea>
-            <h4>Email</h4>
-            <input class="review-input" type="text" name="email">
-            <a class="button-review" href="">Submit Review</a>
+            <div id="2starRating" class="star-items">
+                <img onclick=rating(2) id="star2" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
+            </div>
+            <div id="3starRating" class="star-items">
+                <img onclick=rating(3) id="star3" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
+            </div>
+            <div id="4starRating" class="star-items">
+                <img onclick=rating(4) id="star4" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
+            </div>
+            <div id="5starRating" class="star-items">
+                <img onclick=rating(5) id="star5" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
+            </div>
         </div>
-    
-    </section>
+        <h4>Review Title</h4>
+        <input class="review-input" type="text" name="first-name">
+        <h4>Description</h4>
+        <textarea placeholder="hello" rows=10 cols=78 name="description">
+            </textarea>
+        <h4>Email</h4>
+        <input class="review-input" type="text" name="email">
+        <a class="button-review" href="">Submit Review</a>
+    </div>
+
+</section>
 </body>
 </html>
