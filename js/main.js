@@ -21,7 +21,7 @@
 // MENU THINGS
 function menuToggle() {
     let menuOverlay = document.querySelector('#menuOverlay');
-    let displayState = menuOverlay.classList.toggle('hidden');
+    menuOverlay.classList.toggle('hidden');
     toggleMenuLines();
 }
 
