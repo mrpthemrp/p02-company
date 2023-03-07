@@ -85,7 +85,7 @@ nav {
 
 nav a {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2em;
     color: var(--black);
     margin-right: 15px;
@@ -1038,4 +1038,26 @@ textarea{
     margin-bottom: 0.5em;
 }
 
+/* CONFIRMATION PAGE */
+.confirmation-form {
+    background-color: #ffffff;
+    font-size: 1em;
+    padding: 2em;
+    border-radius: 2px;
+    width: 30em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+    text-align: center;
+}
 
+.confirmation-form img{
+    border: none;
+    margin: 1em;
+}
+
+.confirmation-form h4{
+    font-size: 2em;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+}
+/* //END OF CONFIRMATION PAGE */
