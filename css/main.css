@@ -1096,7 +1096,6 @@ textarea{
 /* INDEX HERO SECTION */
 .hero-image{
     background-image: url("../img/homeBanner.png");
-    background-size: 100px;
     height: 30em;
 
     /* Position and center the image to scale nicely on all screens */
