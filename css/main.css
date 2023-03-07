@@ -426,6 +426,7 @@ fieldset {
     margin-top: 2em;
     background-color: rgba(222, 222, 222, 0.151);
     max-width: 22em;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .listing-content {
@@ -759,7 +760,7 @@ footer {
     top: 8em;
     left: 0;
     width: 18em;
-    height: 90%;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     padding: 20px 5px 0px 20px;
@@ -778,13 +779,36 @@ footer {
     visibility: visible;
 }
 
-.content{
-    padding-left: 10em;
+.content-about {
     display: flex;
     flex-direction: row;
     padding-bottom: 2em;
     padding-top: 2em;
+    justify-content: center;
     gap: 3em;
+}
+
+.content-about h2{
+    font-size: 3em;
+    margin: 0;
+    align-items: center;
+    color: white;
+    padding-bottom: 1em;
+}
+
+.about-form {
+    background-color: #ffffff;
+    font-size: 1em;
+    padding: 2em;
+    border-radius: 2px;
+    max-width: 40em;
+    margin-top: -2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.about-header{
+    background-color: #251d04;
 }
 
 .scrollbox-inner p{
@@ -930,11 +954,13 @@ footer {
     margin-bottom: 1.2em;
     margin-top: 1.5em;
     width: 100%;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .button-product:hover, .button-product:focus {
     color: black;
     background-color: #ffffff;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
 }
 
 .description{

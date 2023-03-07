@@ -56,48 +56,56 @@
     </nav>
 </header>
 
-
-<div class="content">
-    <div class="spacing-3rem"></div>
-    <h2 class="spacing-9rem h1-display-italicize">PosterizedKicks</h2>
-    <h4 class="spacing-3rem">Specializing in collectible and tradeable sneaker posters.</h4>
-    <p class="spacing-3rem">We offer a wide range of posters featuring some of the most popular and iconic sneaker models from brands like
-        Nike, Adidas, New Balance, and more. Their posters are high-quality, printed on thick,
-        cardstock paper, and feature vibrant colours and crisp details.</p>
-
-    <!-- contact form -->
-    <form class="checkout-form spacing-5rem">
-        <h2>Contact Us</h2>
-        <div class="form-fields">
-            <div class="input-row">
-                <label>
-                    <input type="text" name="first-name" placeholder="Your First Name" required>
-                    First Name
-                </label>
-                <label>
-                    <input type="text" name="last-name" placeholder="Your Last Name" required>
-                    Last Name
-                </label>
-
-            </div>
-            <div class="input-row">
-                <label>
-                    <input type="text" name="email" placeholder="hello@sfu.ca" required>
-                    Email Address
-                </label>
-                <label>
-                    <input type="text" name="phone-number" placeholder="(000)-000-0000" required>
-                    Phone Number
-                </label>
-            </div>
-            <label>
-                <input class="form-message" type="text" name="message" placeholder="Your message .." required>
-            </label>
-        </div>
-
-        <a class="button-nav" href="#">Send Message</a>
-    </form>
+<section class="about-header">
+<div class="content-about">
+    <h2>About Us</h2>
 </div>
+</section>
+<div class="about-form">
+    <p>We offer a wide range of posters featuring some of the most popular and iconic sneaker models from brands like
+    Nike, Adidas, New Balance, and more. Their posters are high-quality, printed on thick,
+    cardstock paper, and feature vibrant colours and crisp details.</p>
+</div>
+</div>
+    <!-- contact form -->
+    <section class="grid">
+        <!-- <p>We offer a wide range of posters featuring some of the most popular and iconic sneaker models from brands like
+            Nike, Adidas, New Balance, and more. Their posters are high-quality, printed on thick,
+            cardstock paper, and feature vibrant colours and crisp details.</p> -->
+        <div class="checkout-form">
+            <h3>Contact Us</h3>
+            <div class="payment-methods">
+            <div class="personal-info">
+                <div>
+                    <h4>First Name</h4>
+                    <input class="payment-input" type="text" name="first-name">    
+                </div>
+                <div>
+                    <h4>Last Name</h4>
+                    <input class="payment-input" type="text" name="last-name">
+                </div>
+                <div>
+                    <h4>Email</h4>
+                <input class="payment-input" type="text" name="email" placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <h4>Phone Number</h4>
+                    <input class="payment-input" type="text" name="phone-number" placeholder="(XXX) - XXX - XXXX">
+                </div> 
+                <div>
+                    <h4>Your Message</h4>   
+                    <textarea placeholder="hello" rows=10 cols=71 name="Your message...">
+                    </textarea> 
+                </div>    
+            </div>
+            <div class="payment-button-div">
+                <a class="order-button" href="">Submit</a>
+            </div>
+        </div>
+    
+    </section>
+</div>
+
 <footer>
     <p class="footer-text">Surrey, BC, Canada</p>
     <a class="footer-item" href="https://www.instagram.com/posterizedkicks/" target="_blank">
