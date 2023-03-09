@@ -780,22 +780,6 @@ footer {
     visibility: visible;
 }
 
-.content-about {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2em;
-    padding-top: 2em;
-    justify-content: center;
-    gap: 3em;
-}
-
-.content-about h2{
-    font-size: 3em;
-    margin: 0;
-    align-items: center;
-    color: white;
-    padding-bottom: 1em;
-}
 
 .about-form {
     background-color: #ffffff;
@@ -803,15 +787,25 @@ footer {
     padding: 2em;
     border-radius: 2px;
     max-width: 40em;
-    margin-top: -2em;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: center;
 }
 
-.about-header{
-    background-color: #251d04;
+#about-page{
+    background-color:rgb(210, 205, 187);
 }
 
+.about-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
 .scrollbox-inner p{
     padding-top: 0.5em;
     margin: 0;
