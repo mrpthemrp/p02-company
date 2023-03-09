@@ -795,6 +795,7 @@ footer {
 #about-page{
     background-color:rgb(210, 205, 187);
 }
+
 .about-section {
     display: flex;
     flex-direction: row;
