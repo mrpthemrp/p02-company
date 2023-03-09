@@ -68,31 +68,35 @@ function clearRating(starContainer) {
 }
 
 let counter = 1;
-
-function carouselNext() {
-    let oldId = "update" + counter.toString();
-    let id;
-    if (counter === 3) {
-        id = "update1";
-        counter = 0;
-    } else {
-        id = "update" + (counter + 1).toString();
-    }
+function carouselHelper(oldId, id) {
     document.getElementById(oldId).classList.toggle("carousel-item");
     document.getElementById(id).classList.toggle("carousel-item");
-    counter++;
 }
 
-function carouselPrev() {
+function carouselButton(direction) {
     let oldId = "update" + counter.toString();
     let id;
-    if (counter === 1) {
-        id = "update3";
-        counter = 4;
-    } else {
-        id = "update" + (counter - 1).toString();
+
+    //Forward direction
+    if (direction === "next") {
+        if (counter === 3) {
+            id = "update1";
+            counter = 0;
+        } else {
+            id = "update" + (counter + 1).toString();
+        }
+        carouselHelper(oldId, id);
+        counter++;
     }
-    document.getElementById(oldId).classList.toggle("carousel-item");
-    document.getElementById(id).classList.toggle("carousel-item");
-    counter--;
+    //Backward direction
+    else if (direction === "prev") {
+        if (counter === 1) {
+            id = "update3";
+            counter = 4;
+        } else {
+            id = "update" + (counter - 1).toString();
+        }
+        carouselHelper(oldId, id);
+        counter--;
+    }
 }
