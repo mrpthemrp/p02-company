@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Posterized Kicks Style Guide</title>
     <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/grids.css" rel="stylesheet" type="text/css">
+    <link href="css/nav-bar.css" rel="stylesheet" type="text/css">
 
     <!-- Imported Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script src="js/main.js" rel="script"></script>
 </head>
 
 <body>
@@ -27,8 +36,6 @@
                 <li><a class="navBar-item" href="#interactive_elements">Interactive Elements</a></li>
                 <li><a class="navBar-item" href="#text_elements">Text Elements</a></li>
                 <li><a class="navBar-item" href="#combined_elements">Combined Elements</a></li>
-                <li><a class="navBar-item" href="product_listing.html">Product Listing Template</a></li>
-                <li><a class="navBar-item" href="checkout.html">Checkout Template</a></li>
                 <li><a class="navBar-item" href="#citations">Citations</a></li>
             </ul>
         </nav>
@@ -42,6 +49,7 @@
                 <section class="element">
                     <!-- In-text links -->
                     <h3>In-text link</h3>
+                    <h4>Rendered element:</h4>
                     <p>Posterized Kicks has teamed up with <a href="https://www.nike.com/sg/">Nike</a> to create a series of exclusive posters featuring limited edition sneakers. Fans of both brands can now enjoy 
                         beautifully designed posters that showcase some of the most popular Nike sneakers in a unique and artistic way.</p>
                         <h4>Sample code:</h4>
@@ -50,14 +58,15 @@
 
                 <section class="element">
                     <!-- Submit/Reset Buttons -->
-                    <h3>Add to cart / Shop Now Button</h3>
+                    <h3>Add to cart Button</h3>
+                    <h4>CSS selector:</h4>
+                    <p>button-product</p>
+                    <h4>Rendered element:</h4>
                     <!-- This code is referenced from the example from the sample code given above -->
                     <a class="button-product" href="checkout.html">Add to cart</a>
-                    <a class="shop-now-btn" href="pages/posters.html">Shop Now</a>
                     <h4>Sample code:</h4>
                     <code>&lt;a class="button-product" href="checkout.html">Add to cart&lt;/a&gt;</code>
                     <br>
-                    <code>&lt;a class="shop-now-btn" href="pages/posters.html">Shop Now&lt;/a&gt;</code>
                 </section>
 
                 <section class="container-two">
@@ -66,17 +75,18 @@
                     <div class="sample">
                         <!-- Text Input Field with Label -->
                         <h3>Text Input Field with Label</h3>
+                        <h4>CSS selector:</h4>
+                        <p>search-bar</p>
                         <h4>Sample code:</h4>
-                        <code>&lt;form>&lt;label>&lt;input type="text" placeholder="Search..." class="search-bar">&lt;/label&gt;&lt;/form&gt;</code>
+                        <code>&lt;form>&lt;label>&lt;input class="payment-input" type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••">&lt;/label&gt;&lt;/form&gt;</code>
                     </div>
                     <div class="rendered">
                         <!-- Rendered element -->
-                        <h4>Rendered element:</h4>
-                        <form>
-                            <label>
-                                <input type="text" placeholder="Search..." class="search-bar">
-                            </label>
-                        </form>
+                        <h4>Rendered element:</h4>                  
+                        <div>
+                            <h4>Credit Card Number</h4>
+                        <input class="payment-input" type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••">
+                        </div>
                     </div>
                 </section>
 
@@ -86,19 +96,25 @@
 
                     <div class="sample">
                         <h3>Radio Button with Label</h3>
+                        <h4>CSS selector:</h4>
                         <h4>Sample code:</h4>
-                        <code>&lt;label>&lt;input type="radio" name="options" value="option1">Yes&lt;/label&gt;</code>
+                        <code>&lt;label>&lt;input class="rating-checkbox" type="checkbox" name="5 stars" value="yes">&lt;/label&gt;</code>
                         <!-- Rendered element -->
                     </div>
-                    <div class="rendered">
-                        <h4>Rendered element:</h4>
-                        <label>
-                            <input type="radio" name="options" value="option1">Yes
-                        </label>
-                        <label>
-                            <input type="radio" name="options" value="option2">No
-                        </label>
+                    <div>
+                    <h4>Rendered element:</h4>
+                     <!-- 5 STARS -->
+                     <div class="rating-row">
+                        <input class="rating-checkbox" type="checkbox" name="5 stars" value="yes">
+                    <div id="starContainer1" class="star-container resize">
+                            <img id="star1-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                            <img id="star2-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                            <img id="star3-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                            <img id="star4-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                            <img id="star5-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
                     </div>
+                </div>
+                   
                 </section>
 
 
@@ -107,16 +123,16 @@
 
                     <div class="sample">
                         <h3>Image as a Link</h3>
+                        <h4>CSS selector:</h4>
                         <h4>Sample code:</h4>
-                        <code>&lt;a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration">&lt;img src="../img/shoe.webp"
-                            alt="Air Jordan 1 Lost and Found" width="300" height="200">s&lt;/a&gt;</code>
+                        <code>&lt;a href="https://www.goat.com/sneakers/air-jordan-1-retro-high-og-555088-105">&lt;img src="../img/Jordan1Mocha-01.png"
+                            alt="jordan 1 mocha" width="200" height="200">s&lt;/a&gt;</code>
                     </div>
                     <div class="rendered">
                         <!-- Rendered element -->
                         <h4>Rendered element:</h4>
                         <!-- The image used is from https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration -->
-                        <a href="https://www.nike.com/ca/a/jordan-1-chicago-lost-and-found-inspiration"><img
-                                src="../img/shoe.webp" alt="Air Jordan 1 Lost and Found" width="300" height="200"></a>
+                        <a href="https://www.goat.com/sneakers/air-jordan-1-retro-high-og-555088-105"><img src="../img/Jordan1Mocha-01.png" alt="jordan 1 mocha" width="200" height="200"></a>
                     </div>
                 </section>
             </section>
@@ -140,6 +156,9 @@
                 <section class="element">
                     <!-- Paragraphs -->
                     <h3>Paragraphs</h3>
+                    <h4>Sample code:</h4>
+                    <code>&lt;p>This is a paragraph&lt;p></code>
+                    <h4>Rendered element:</h4>
                     <p>PosterizedKicks is a company that specializes in collectible sneaker posters. They offer a wide
                         range
                         of
@@ -154,6 +173,14 @@
                 <section class="element">
                     <!-- Numbered Lists -->
                     <h3>Numbered Lists</h3>
+                    <h4>Sample code:</h4>
+                    <code>
+                        &lt;ol> <br>
+                        &lt;li>Item 1&lt;/li><br>
+                        &lt;li>Item 2&lt;/li><br>
+                        &lt;li>Item 3&lt;/li><br>
+                        &lt;/ol></code>
+                        <h4>Rendered element:</h4>
                     <ol>
                         <li>Item 1</li>
                         <li>Item 2</li>
@@ -171,103 +198,157 @@
                     <!-- Main Navigation -->
                     <h3>Main Navigation</h3>
                     <nav>
-                        <a href="#home" class="button">Home</a>
-                        <a href="#about" class="button">About</a>
-                        <a href="#services" class="button">Services</a>
-                        <a href="#contact" class="button">Contact</a>
+                        <div class="menu">                            
+                                <div id="menu-middle">
+                                    <a href="#">Home</a>
+                                    <a href="pages/posters.html">Posters</a>
+                                    <a href="pages/custom.html">Custom</a>
+                                    <a href="pages/about.html">About</a>
+                                 </div>
+                        </div>
                     </nav>
                 </section>
 
+                <h3>Product Listing</h3>
+                <div class="container-posters">
                 <!-- Product/Service Listing -->
-                <div class="poster-listing">
-                    <a href="https://stockx.com/nike-sb-dunk-low-panda-pigeon"><img
-                            src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike SB Dunk Low" width="350" height="500"></a>
-                    <div class="listing-content">
-                        <h4>Nike SB Dunk Low Poster</h4>
-                        <h3>$25</h3>
-                        <div>
-                            <!-- Quantity input  -->
-                            <label for="quantity">Quantity:</label>
-
-                            <select name="quantity">
-                                <option value="one">1</option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>
-                                <option value="four">4</option>
-                                <option value="five">5</option>
-                                <option value="six">6</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Add to cart button -->
-                    <a class="button-nav-cart" href="#">Add to cart</a>
+                 <!-- Listing 1 -->
+             <div class="poster-listing">
+                <a href=""><img src="../img/Jordan1-2.png"
+                    alt="Jordan 1 University Blue Poster"
+                    width="350"
+                    height="500"></a>
+                <div class="listing-content">
+                    <h4>Jordan 1 Mocha Poster</h4>
+                    <div class="price-stars">
+                    <h3>$35</h3>
+                    <!-- Reviews stars -->
+                    <div id="starContainer6" class="star-container resize">
+                        <img id="star1-6" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star2-6" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star3-6" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star4-6" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star5-6" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
                 </div>
+                </div>
+                </div>
+                <!-- Add to cart button -->
+                <a class="button-nav-cart" href="checkout.html">Add to cart</a>
+            </div>
 
-                <section class="element">
+             <!-- Listing 2 -->
+             <div class="poster-listing">
+                <a href="product_detail.html"><img src="../img/NikeDunkLowPandaPigeon.jpg"
+                    alt="Nike Dunk Low Panda Pigeon Poster" width="350"
+                    height="500"></a>
+                <div class="listing-content">
+                    <h4>Nike Dunk Low Panda Pigeon Poster</h4>
+                    <div class="price-stars">
+                        <h3>$45</h3>
+                    <div id="starContainer7" class="star-container resize">
+                        <img id="star1-7" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star2-7" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star3-7" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star4-7" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                        <img id="star5-7" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                </div>
+                </div>
+                </div>
+                <!-- Add to cart button -->
+                <a class="button-nav-cart" href="checkout.html">Add to cart</a>
+            </div>
 
+        <!-- Listing 3 -->
+        <div class="poster-listing">
+            <a href="">
+                <img src="../img/NewBalance.jpg" alt="New Balance 550 Aime Leon Dore Poster" width="350" height="500"></a>
+            <div class="listing-content">
+                <h4>New Balance 550 Aime Leon Dore Poster</h4>
+                <div class="price-stars">
+                    <h3>$25</h3>
+                <div id="starContainer8" class="star-container resize">
+                    <img id="star1-8" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star2-8" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star3-8" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star4-8" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                    <img id="star5-8" src="../img/star_outline.svg" width="20" alt="Outline of a star.">
+            </div>
+            </div>
+            </div>
+            <!-- Add to cart button -->
+            <a class="button-nav-cart" href="checkout.html">Add to cart</a>
+        </div>
+
+    </div>
+                <section>
+                    <div></div>
                     <!-- Payment Form -->
-                    <h3>Payment Form</h3>
-                    <form>
+                    <div class="checkout-form">
+                        <h3>Payment Form</h3>
                         <div class="payment-methods">
                             <h4>Payment Methods</h4>
-                          <label>
-                            <input type="radio" name="payment-method" value="credit-card">
-                            <span class="method-label">Debit or Credit</span>
-                          </label>
-                          <label>
-                            <input type="radio" name="payment-method" value="paypal">
-                            <span class="method-label">Paypal</span>
-                          </label>
-                        </div>
-                        <div class="form-fields">
-                          <div class="input-row">
-                            <label>                             
-                              <input type="text" name="first-name" required>
-                              First Name
-                            </label>
-                            <label>
-                              <input type="text" name="last-name" required>
-                              Last Name
-                            </label>
-                          </div>
-                          <div class="input-row">
-                            <label>
-                              <input type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••" required>
-                              Credit Card Number
-                            </label>
-                            <label>
-                              <input type="text" name="security-code" placeholder="CVV" required>
-                              Security Code
-                            </label>
-                          </div>
-                          <div class="input-row">
-                            <label>
-                              <input type="text" name="card-expiration" placeholder="MM / YY" required>
-                              Card Expiration
-                            </label>
-                          </div>
-                        </div> 
-                        <div class="payment-button-div">
-                            <a class="button-nav" href="#">Submit Order</a>
-                        </div>                   
-                      </form>
-
-                    <!-- Checkout Cart -->
-                    <h3>Checkout Cart</h3>
-                              
-                <div class="checkout-cart">                 
-                    <div class="cart-items">
-                            <!-- Shopping Cart label -->
-                            <div class="flex-row">
-                                <h2>Shopping Cart</h2>
-                                <h4>3 items</h4>
+                            <div>
+                                <label>
+                                    <input type="radio" name="payment-method" value="credit-card">
+                                    <span class="material-symbols-outlined">
+                                        credit_card
+                                        </span>
+                                    <span class="method-label">Debit or Credit</span>
+                                </label>
                             </div>
-                          <!-- Display cart items here -->
-                          <div class="product-cart">
-                          <img src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike SB Dunk Low" width="88" height="125">
-                          <div>
-                          <h4>Nike Dunk Low Panda Pigeon</h4>
-                          <select name="quantity">
+                            <div>
+                                <label>
+                                    <input type="radio" name="payment-method" value="paypal">
+                                    <img src="../img/paypal.png" alt="Paypal Logo"
+                                 width="20" height="20">
+                                    <span class="method-label">Paypal</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="personal-info">
+                            <div>
+                                <h4>First Name</h4>
+                                <input class="payment-input" type="text" name="first-name">    
+                            </div>
+                            <div>
+                                <h4>Last Name</h4>
+                                <input class="payment-input" type="text" name="last-name">
+                            </div>
+                            <div>
+                                <h4>Credit Card Number</h4>
+                            <input class="payment-input" type="text" name="credit-card-number" placeholder="•••• •••• •••• ••••">
+                            </div>
+                            <div>
+                                <h4>Security Code</h4>
+                                <input class="payment-input" type="text" name="security-code" placeholder="CVV">
+                            </div>  
+                            <div>
+                                <h4>Card Expiration</h4>
+                            <input class="payment-input" type="text" name="card-expiration" placeholder="MM / YY">
+                            </div>       
+                        </div>
+                        <div class="payment-button-div">
+                            <a class="order-button" href="confirmation.html">Submit Order</a>
+                        </div>
+                    </div>
+                </section>
+<section>
+                 <!-- Checkout Cart -->
+    <div class="checkout-cart">
+        <div class="cart-items">
+            <!-- Shopping Cart label -->
+            <div class="flex-row">
+                <h2>Shopping Cart</h2>
+                <h4>3 items</h4>
+            </div>
+            <!-- Display cart items here -->
+            <div class="product-cart">
+                <img src="../img/NikeDunkLowPandaPigeon.jpg" alt="Nike SB Dunk Low" width="88" height="125">
+                <div>
+                        <h4>Nike Dunk Low Panda Pigeon Poster</h4>
+                    <h3>$45</h3>
+                    <label>
+                        <select name="quantity">
                             <option value="one">1</option>
                             <option value="two">2</option>
                             <option value="three">3</option>
@@ -275,67 +356,73 @@
                             <option value="five">5</option>
                             <option value="six">6</option>
                         </select>
-                        <h3>$25</h3>
-                        </div>
-                          </div>
-                          <div class="product-cart">
-                            <img src="../img/NewBalance.jpg" alt="New Balance 550" width="88" height="125">
-                            <div>
-                            <h4>New Balance 550 Aime Leon Dore</h4>
-                            <select name="quantity">
-                                <option value="one">1</option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>
-                                <option value="four">4</option>
-                                <option value="five">5</option>
-                                <option value="six">6</option>
-                            </select>
-                            <h3>$25</h3>
-                        </div>
-                          </div>
-                          <div class="product-cart">
-                            <img src="../img/Jordan1-3.png" alt="Jordan 1" width="88" height="125">
-                            <div>
-                            <h4>Jordan 1 Retro Chicago 2015</h4>
-                            <select name="quantity">
-                                <option value="one">1</option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>
-                                <option value="four">4</option>
-                                <option value="five">5</option>
-                                <option value="six">6</option>
-                            </select>
-                            <h3>$25</h3>
-                            </div>
-                          </div>
-                          
-                    </div>
-                    <div class="cart-summary">
-                          <!-- Display cart summary here -->
-                          <h2>Summary</h2>
-                        <div class="flex-row">
-                          <h3>3 items</h3>
-                          <h3>$75.00</h3>
-                        </div>
-                        <label>
-                            Shipping
+                    </label>
+    
+                </div>
+            </div>
+            <div class="product-cart">
+                <img src="../img/Jordan1-4.png" alt="Jordan 1 Royal Toe" width="88" height="125">
+                <div>
+                    <h4>Jordan 1 Royal Toe Poster</h4>
+                    <h3>$35</h3>
+                    <label>
                         <select name="quantity">
-                            <option value="one">Standard 10-14 Business Days - $5.00</option>
-                            <option value="one">Standard 1-3 Business Days - $15.00</option>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
                         </select>
                     </label>
-                    <div class="flex-row">
-                        <div id="total-price">
-                        <h3>Total Price</h3>
-                        <h3>$80.00</h3>
-                    </div>
-                      </div>
-                      <a class="button-nav-cart" href="#">Checkout</a>
-                    </div>
-                    <a href="#" class="back-to-shop">Back to Shop</a>
+              
                 </div>
+            </div>
+            <div class="product-cart">
+                <img src="../img/customPosterTemp-01.jpg" alt="Custom Poster" width="88" height="125">
+                <div>
+                    <h4>Custom Poster</h4>
+                    <h3>$45</h3>
+                    <label>
+                        <select name="quantity">
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                            <option value="four">4</option>
+                            <option value="five">5</option>
+                            <option value="six">6</option>
+                        </select>
+                    </label>
+   
+                </div>
+            </div>
 
-                </section>
+        </div>
+        <div class="cart-summary">
+            <!-- Display cart summary here -->
+            <h2>Summary</h2>
+            <div class="flex-row">
+                <h3>3 items</h3>
+                <h3>$125.00</h3>
+            </div>
+            <label for="quantity">Shipping: </label>      
+                <select name="quantity">
+                    <option value="one">Standard 7-10 Business Days - Free</option>
+                    <option value="one">Express 1-3 Business Days - $15.00</option>
+                </select>
+            
+            <div class="flex-row">
+                <div id="total-price">
+                    <h3>Total Price</h3>
+                    <h3>$125.00</h3>
+                </div>
+            </div>
+            <a class="button-checkout" href="payment.html">Checkout</a>
+        </div>
+   
+    </div>
+
+</section>
 
 
                 <!-- BASIC BRANDING IDEAS -->
@@ -469,12 +556,8 @@
                             <p>HEX: #FFFFFF</p>
                         </div>
                         <div id="gray" class="branding">
-                            <p>Gray</p>
-                            <p>HEX: #445063</p>
-                        </div>
-                        <div id="blue" class="branding">
-                            <p>Blue</p>
-                            <p>HEX: #10739B</p>
+                            <p>Light Grey</p>
+                            <p>HEX: #D2D2D2</p>
                         </div>
                     </div>
 
@@ -525,12 +608,11 @@
                                 used to showcase the posters and the attention to detail that goes into them.</p>
                         </div>
                         <div id="poster-brand-img">
-                            <img src="../img/example1.jpg" alt="Example 1" width="160" height="250">
+                            <img src="../img/mockup1.png" alt="Example 1" width="250" height="250">
 
+                            <img src="../img/mockup2.jpg" alt="Example 2" width="250" height="250">
 
-                            <img src="../img/example2.jpg" alt="Example 2" width="220" height="250">
-
-                            <img src="../img/example3.jfif" alt="Example 3" width="400" height="250">
+                            <img src="../img/NikeDunkLowKentucky-01.png" alt="Example 3" width="250" height="250">
                         </div>
                     </section>
                 </section>
@@ -550,11 +632,6 @@
                         </li>
                         <li class="long-text">Source Sans Pro 600. Retrieved from
                             ttps://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap</li>
-                        <li class="long-text">Black/Red/White Jordan 1 Image. Retrived from
-                            https://realsport101.com/real-kit/best-places-to-buy-sneakers/</li>
-                        <li class="long-text">Jordan 1 Silouhette. Retrieved from
-                            https://www.google.com/search?tbs=sbi:AMhZZit-KwuhJLO5NZjkKzlP47P0dj1T3_1gwVrr5u3ch4ZDG6V6bdzZgKqqbCNUKkt_1Q9ViC5fgjrbcHO6p2UbcHsfkCE6PVo_1_1cJXMWQa4pp4T3b6UNePOa9nI5bLjKaNs3r3V78A5ut0XNCygyXHyEjSmiGyBovQ
-                        </li>
                         <li class="long-text">All poster images are sourced from Noah De Guzman and @PosterizedKicks
                         </li>
                     </ul>
