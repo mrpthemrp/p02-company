@@ -4,7 +4,7 @@
     --blue-light: rgb(16, 115, 255);
     --white-bkdg: #FCFCFC;
     --grey-light: rgb(210, 210, 210);
-    --grey-dark: rgba(0, 0, 0, 0.217);
+    --grey-dark: rgba(0, 0, 0, 0.664);
     --grey-darkest: rgb(68, 80, 99);
     --black: rgb(0, 0, 0);
 }
@@ -54,7 +54,7 @@ h4, h5 {
 
 p {
     font-size: 1.1em;
-    line-height: 1;
+    line-height: 1.2;
     letter-spacing: 0.01em;
     max-width: 45em;
     margin-top: 0.5em;
@@ -1109,7 +1109,7 @@ textarea{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 55%;
+    top: 59%;
     left: 50%;
     margin-left: 4em;
     transform: translate(-95%, -70%);
@@ -1128,6 +1128,7 @@ textarea{
 .hero-text img{
     border: none;
     margin-right: 2em;
+    margin-top: 1em;
 }
 
 .shop-now-btn {
@@ -1146,6 +1147,7 @@ textarea{
     -webkit-transition: background-color 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     margin-bottom: 1.2em;
+    margin-top: 2em;
     width: 13em;
     box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
 }
@@ -1155,5 +1157,36 @@ textarea{
     background-color: #ffffff;
     box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
 }
+
+/* Updates and Events */
+.updates-form {
+    background-color: #ffffff;
+    font-size: 1em;
+    padding: 2em;
+    border-radius: 2px;
+    max-width: 47em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+}
+
+.events {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.events img {
+    border: none;
+}
+
+.events h5 {
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    color: var(--grey-dark);
+}
+#read-more{
+    text-decoration: underline;
+}
+/* // END OF Updates and Events */
 
 /* // END OF INDEX */
