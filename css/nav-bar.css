@@ -1,18 +1,18 @@
 /* NAVIGATION STYLING */
 
-.menu{
-    display: inline-flex;
-    flex-direction: row;
+.menu {
     list-style-type: none;
     text-decoration: none;
     width: 100%;
-    justify-content: center;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
 }
 
-.menu-inside{
+.menu-inside {
     display: inline-flex;
     flex-direction: row;
     flex: 0 1 auto;
@@ -22,6 +22,7 @@
     flex-wrap: wrap;
     gap: 3em;
 }
+
 /** END OF NAVIGATION STYLING **/
 
 /* HAMBURGER MENU ICON */
@@ -47,26 +48,26 @@
     margin: 0.15rem;
 }
 
-.transformLine1{
+.transformLine1 {
     transform: rotate(45deg);
 }
 
-.transformLine2{
+.transformLine2 {
     background-color: transparent;
     transform: rotate(45deg);
     opacity: 0;
 }
 
-.transformLine3{
+.transformLine3 {
     transform: rotate(-44deg) translateX(1em) translateY(-1.1em);
 }
 
-.hidden{
+.hidden {
     display: inline-flex;
     flex: 0 1 auto;
 }
 
-#menu-right-end{
+#menu-right-end {
     display: inline-flex;
     flex-direction: row;
     flex: 1 0 auto;
@@ -77,16 +78,7 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1200px) {
-    .menu {
-        flex-direction: row;
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-
-    .hamburger{
+    .hamburger {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -95,7 +87,7 @@
         justify-content: space-between;
     }
 
-    #menuOverlay{
+    #menuOverlay {
         z-index: 7;
         position: fixed;
         margin: 0;
@@ -109,11 +101,11 @@
         transition: 0.5s ease-out;
     }
 
-    .hidden{
+    .hidden {
         display: none;
     }
 
-    .menu-inside{
+    .menu-inside {
         display: inline-flex;
         flex-direction: row;
         margin: 5rem;
@@ -125,7 +117,7 @@
         gap: 15rem;
     }
 
-    #menu-middle{
+    #menu-middle {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
