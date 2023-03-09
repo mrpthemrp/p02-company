@@ -45,15 +45,14 @@
 }
 
 /*  CAROUSEL */
-/*reference: https://css-tricks.com/css-only-carousel/*/
-
 .carousel-container {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     justify-items: center;
-    align-content: space-evenly;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
 .carousel-item {
