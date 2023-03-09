@@ -32,9 +32,7 @@ function rating(starNumber, starContainer, imgID) {
     }
 
     for (let i = 0; i < starNumber; i++) {
-        let starDivID = stars[i].id;
-        let starImgID = document.getElementById(starDivID).firstElementChild.id;
-
+        let starImgID = stars[i].id;
         if (clear) {
             toggleStarToOutline(starImgID);
         } else {
@@ -62,8 +60,7 @@ function clearRating(starContainer) {
     let stars = document.getElementById(starContainer).children;
     for (let i = 0; i < 5; i++) {
         let starDivID = stars[i].id;
-        let starImgID = document.getElementById(starDivID).firstElementChild.id;
-        toggleStarToOutline(starImgID);
+        toggleStarToOutline(starDivID);
     }
 }
 

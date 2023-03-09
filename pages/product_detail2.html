@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Jordan 1 Royal Toe Poster</title>
 
     <link href="../css/main.css" rel="stylesheet" type="text/css">
@@ -100,11 +100,12 @@
             <a href=""><img src="../img/Jordan1Mocha-01.png" alt="Jordan 1 Mocha" width="100" height="100"></a>
             <a href=""><img src="../img/Jordan1Chicago-01.png" alt="Jordan 1 Chicago" width="100"
                             height="100"></a>
-            <a href=""><img src="../img/Jordan1MidGymRed-01.png" alt="Jordan 1 Mid Gym Red" width="100" height="100"></a>
+            <a href=""><img src="../img/Jordan1MidGymRed-01.png" alt="Jordan 1 Mid Gym Red" width="100"
+                            height="100"></a>
         </div>
         <div>
             <!-- Quantity input  -->
-            <label for="quantity">Quantity:</label>
+            <label>Quantity:</label>
             <select name="quantity">
                 <option value="one">1</option>
                 <option value="two">2</option>
@@ -116,7 +117,7 @@
         </div>
         <!-- Add to cart button -->
         <a class="button-product" href="checkout.html">Add to cart</a>
-        
+
     </div>
 </section>
 
@@ -125,12 +126,12 @@
         <h3>Reviews (8)</h3>
         <div class="user-review">
             <h4>Minimal sneaker poster</h4>
-            <div id="starContainer" class="star-container resize">
-                <img id="star1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star3" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star4" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star5" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+            <div id="starContainer1" class="star-container resize">
+                <img id="star1-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star2-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star3-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star4-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star5-1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
             </div>
             <p>I absolutely love this poster! The high-quality paper with a beautiful matte finish really showcases the
                 sleek design of the Jordan 1 Royal Toe shoe in a minimalist style that makes it the perfect addition to
@@ -138,12 +139,12 @@
         </div>
         <div class="user-review">
             <h4>The colors compliment my office!</h4>
-            <div id="starContainer" class="star-container resize">
-                <img id="star1" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star3" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star4" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
-                <img id="star5" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+            <div id="starContainer2" class="star-container resize">
+                <img id="star1-2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star2-2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star3-2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star4-2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
+                <img id="star5-2" src="../img/star_fill.svg" width="20" alt="Outline of a star.">
             </div>
             <p>I recently purchased the minimal sneaker poster of the Jordan 1 Royal Toe, and I'm blown away by how
                 stunning it looks.
@@ -163,22 +164,17 @@
     <div id="review-form">
         <h3>Write a review</h3>
         <h4>Your overall rating</h4>
-        <div id="starContainer" class="star-container resize">
-            <div id="1starRating" class="star-items">
-                <img onclick=rating(1) id="star1" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-            </div>
-            <div id="2starRating" class="star-items">
-                <img onclick=rating(2) id="star2" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-            </div>
-            <div id="3starRating" class="star-items">
-                <img onclick=rating(3) id="star3" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-            </div>
-            <div id="4starRating" class="star-items">
-                <img onclick=rating(4) id="star4" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-            </div>
-            <div id="5starRating" class="star-items">
-                <img onclick=rating(5) id="star5" src="../img/star_outline.svg" width="25" alt="Outline of a star.">
-            </div>
+        <div id="starContainer3" class="star-container star-pointer resize">
+            <img id="star1-3" src="../img/star_outline.svg" width="25" alt="Outline of a star."
+                 onclick=rating(1,'starContainer3','star1-3')>
+            <img id="star2-3" src="../img/star_outline.svg" width="25" alt="Outline of a star."
+                 onclick=rating(2,'starContainer3','star2-3')>
+            <img id="star3-3" src="../img/star_outline.svg" width="25" alt="Outline of a star."
+                 onclick=rating(3,'starContainer3','star3-3')>
+            <img id="star4-3" src="../img/star_outline.svg" width="25" alt="Outline of a star."
+                 onclick=rating(4,'starContainer3','star4-3')>
+            <img id="star5-3" src="../img/star_outline.svg" width="25" alt="Outline of a star."
+                 onclick=rating(5,'starContainer3','star5-3')>
         </div>
         <h4>Review Title</h4>
         <input class="review-input" type="text" name="first-name">
