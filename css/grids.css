@@ -83,5 +83,24 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 7rem;
+}
+
+.news-updates{
+    font-family: Archivo,sans-serif;
+    font-size: 1vw;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--grey-light);
+}
+.news-updates:hover{
+    cursor: pointer;
+    transform: scale(105%);
+    transition: 0.3s ease-out;
+    color: var(--white-bkdg);
 }
