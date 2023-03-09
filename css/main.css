@@ -1095,8 +1095,8 @@ textarea{
 
 /* INDEX HERO SECTION */
 .hero-image{
-    background-image: url("../img/homeBanner.png");
-    height: 30em;
+    background-image: url("../img/heroImageBrown-01-01.jpg");
+    height: 38em;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -1106,12 +1106,54 @@ textarea{
 }
 
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: 4em;
+    transform: translate(-95%, -70%);
     color: white;
+    width: 33em;
   }
+
+.hero-text h1 {
+    font-size: 3.5em;
+}
+.hero-text p{
+    color: rgb(250, 250, 250);
+    margin-bottom: 0;
+  }
+
+.hero-text img{
+    border: none;
+    margin-right: 2em;
+}
+
+.shop-now-btn {
+    border: 1px solid black;
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white-bkdg);
+    background: var(--black);
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+    margin-bottom: 1.2em;
+    width: 13em;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.shop-now-btn:hover, .shop-now-btn:focus {
+    color: black;
+    background-color: #ffffff;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
+}
 
 /* // END OF INDEX */
