@@ -5,7 +5,7 @@ function menuToggle() {
     toggleMenuLines();
 }
 
-function toggleMenuLines(){
+function toggleMenuLines() {
     let line1 = document.querySelector('#menuLine1');
     let line2 = document.querySelector('#menuLine2');
     let line3 = document.querySelector('#menuLine3');
@@ -19,15 +19,15 @@ function toggleMenuLines(){
 // STAR REVIEW
 //reference: https://stackoverflow.com/questions/34102091/changing-images-src-with-event-onclick
 
-function rating(starNumber,starContainer, imgID) {
+function rating(starNumber, starContainer, imgID) {
     let stars = document.getElementById(starContainer).children;
     let clear;
 
-    if(document.getElementById(imgID).getAttribute('src') ===
-        "../img/star_fill.svg"){
+    if (document.getElementById(imgID).getAttribute('src') ===
+        "../img/star_fill.svg") {
         clear = true;
         clearRating(starContainer);
-    } else{
+    } else {
         clear = false;
     }
 
@@ -35,7 +35,7 @@ function rating(starNumber,starContainer, imgID) {
         let starDivID = stars[i].id;
         let starImgID = document.getElementById(starDivID).firstElementChild.id;
 
-        if(clear){
+        if (clear) {
             toggleStarToOutline(starImgID);
         } else {
             toggleStarToFill(starImgID);
@@ -68,10 +68,11 @@ function clearRating(starContainer) {
 }
 
 let counter = 1;
-function carouselNext(){
-    let oldId = "update"+counter.toString();
+
+function carouselNext() {
+    let oldId = "update" + counter.toString();
     let id;
-    if(counter === 3){
+    if (counter === 3) {
         id = "update1";
         counter = 0;
     } else {
@@ -82,10 +83,10 @@ function carouselNext(){
     counter++;
 }
 
-function carouselPrev(){
-    let oldId = "update"+counter.toString();
+function carouselPrev() {
+    let oldId = "update" + counter.toString();
     let id;
-    if(counter === 1){
+    if (counter === 1) {
         id = "update3";
         counter = 4;
     } else {

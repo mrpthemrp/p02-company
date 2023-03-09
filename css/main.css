@@ -731,7 +731,8 @@ footer {
 }
 
 .footer-span{
-    font-size: 1.25rem;
+    transform: scale(0.9);
+    color: var(--black);
 }
 
 @media (max-width: 702px) {
