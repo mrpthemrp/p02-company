@@ -59,17 +59,18 @@
     display: none;
 }
 
-.carousel-button{
+.carousel-button {
     background-color: transparent;
     border: none;
 }
-.carousel-button:hover{
+
+.carousel-button:hover {
     cursor: pointer;
     transform: scale(110%);
     transition: 0.3s ease-out;
 }
 
-.carousel-section{
+.carousel-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -79,8 +80,8 @@
     margin: 7rem;
 }
 
-.news-updates{
-    font-family: Archivo,sans-serif;
+.news-updates {
+    font-family: Archivo, sans-serif;
     font-size: 1vw;
     background-color: transparent;
     border: none;
@@ -91,9 +92,17 @@
     flex-wrap: wrap;
     color: var(--grey-light);
 }
-.news-updates:hover{
+
+.news-updates:hover {
     cursor: pointer;
     transform: scale(105%);
     transition: 0.3s ease-out;
     color: var(--white-bkdg);
+}
+
+.material-symbols-rounded {
+    font-variation-settings: 'FILL' 0,
+    'wght' 300,
+    'GRAD' 200,
+    'opsz' 20
 }
