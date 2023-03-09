@@ -700,14 +700,34 @@ footer {
     align-content: center;
     justify-content: space-evenly;
     align-items: flex-end;
+    max-height: 3rem;
 }
 
 .footer-item {
     color: var(--grey-darkest);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.footer-item:hover{
+    transform: scale(102%);
+    cursor: pointer;
 }
 
 .footer-text {
     font-size: 0.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-img{
+    max-width: 1.25rem;
+    max-height: 1.25rem;
 }
 
 @media (max-width: 702px) {
