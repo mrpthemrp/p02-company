@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 
     <script src="js/main.js" rel="script"></script>
 </head>
@@ -62,72 +64,87 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1>Posterized Kicks</h1>
-            <p>PosterizedKicks is a company that specializes in collectible sneaker posters. 
-                We offer a wide 
-                range of posters featuring some of the most popular and iconic sneaker models from brands like Nike, 
+            <p>PosterizedKicks is a company that specializes in collectible sneaker posters.
+                We offer a wide
+                range of posters featuring some of the most popular and iconic sneaker models from brands like Nike,
                 Adidas, Reebok, and more. </p>
             <img src="img/signature-01-01.png" alt="Noah De Guzman Signature"
-                width="140" height="95">
-                <a class="shop-now-btn" href="pages/posters.html">Shop Now</a>
-          </div>
+                 width="140" height="95">
+            <a class="shop-now-btn" href="pages/posters.html">Shop Now</a>
+        </div>
 
     </div>
 </section>
-<section>
-   <h2>News and Updates</h2>
+<section class="carousel-container">
+    <button id="backBtn" class="carousel-button" onclick="carouselPrev()">
+        <span class="material-symbols-rounded">
+            arrow_back
+        </span>
+    </button>
     <!-- UPDATE 1 -->
-    <div class="updates-form">
+    <div id="update1" class="updates-form">
         <div class="events">
             <img src="img/nikeLogo.jfif" alt="Nike Logo"
-                width="200" height="200">
-                <div>
-                    <h5>Wednesday March 1, 2023</h5>
-                    <h2>Nike Collaboration</h2>   
-                    <p>Posterized Kicks has teamed up with <a href="">Nike</a> to create a series of exclusive posters featuring limited edition sneakers. Fans of both brands can now enjoy 
-                        beautifully designed posters that showcase some of the most popular Nike sneakers in a unique and artistic way.</p>
-                        <a id="read-more"href=""><span>Read more</span></a>
-                    </a>
-                </div>   
+                 width="200" height="200">
+            <div>
+                <h5>Wednesday March 1, 2023</h5>
+                <h2>Nike Collaboration</h2>
+                <p>Posterized Kicks has teamed up with Nike to create a series of exclusive posters featuring limited
+                    edition sneakers. Fans of both brands can now enjoy
+                    beautifully designed posters that showcase some of the most popular Nike sneakers in a unique and
+                    artistic way.</p>
+                <a id="read-more" href=""><span>Read more</span></a>
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- UPDATE 2 -->
-    <div class="updates-form">
+    <div id="update2" class="updates-form carousel-item">
         <div class="events">
             <img src="img/Jordan1Chicago-01.png" alt="Jordan 1 Chicago"
-                width="200" height="200">
-                <div>
-                    <h5>Thursday February 23, 2023</h5>
-                    <h2>Jordan 1 Collection</h2>   
-                    <p>Posterized Kicks has just dropped an exciting new collection of Jordan-inspired posters that are sure to impress sneakerheads and basketball fans alike. The collection features 
-                        iconic Jordan 1 sneakers and pays homage to the legacy of Michael Jordan. This collection is set to release on March 5, 2023.</p>
-                        <a id="read-more"href=""><span>Read more</span></a>
-                    </a>
-                </div>   
+                 width="200" height="200">
+            <div>
+                <h5>Thursday February 23, 2023</h5>
+                <h2>Jordan 1 Collection</h2>
+                <p>Posterized Kicks has just dropped an exciting new collection of Jordan-inspired posters that are sure
+                    to impress sneakerheads and basketball fans alike. The collection features
+                    iconic Jordan 1 sneakers and pays homage to the legacy of Michael Jordan. This collection is set to
+                    release on March 5, 2023.</p>
+                <a id="read-more" href=""><span>Read more</span></a>
+                </a>
+            </div>
         </div>
     </div>
 
-      <!-- UPDATE 3 -->
-      <div class="updates-form">
+    <!--     UPDATE 3-->
+    <div id="update3" class="updates-form carousel-item">
         <div class="events">
             <img src="img/PosterizedKicks LOGO.jpg" alt="Jordan 1 Chicago"
-                width="200" height="200">
-                <div>
-                    <h5>Tuesday February 14, 2023</h5>
-                    <h2>Instagram Giveaway</h2>   
-                    <p>To celebrate our love for sneaker art, we're giving away one of our exclusive posters to a lucky winner. To enter, simply follow our page, 
-                        like and tag tag a friend in our most recent post. The winner will be randomly selected and announced on our Instagram story.</p>
-                        <a id="read-more"href=""><span>Read more</span></a>
-                    </a>
-                </div>   
+                 width="200" height="200">
+            <div>
+                <h5>Tuesday February 14, 2023</h5>
+                <h2>Instagram Giveaway</h2>
+                <p>To celebrate our love for sneaker art, we're giving away one of our exclusive posters to a lucky
+                    winner. To enter, simply follow our page,
+                    like and tag a friend in our most recent post. The winner will be randomly selected and announced on
+                    our Instagram story.</p>
+                <a id="read-more" href=""><span>Read more</span></a>
+                </a>
+            </div>
         </div>
     </div>
+    <button id="forwardBtn" class="carousel-button" onclick="carouselNext()">
+        <span class="material-symbols-rounded">
+            arrow_forward
+        </span>
+    </button>
 </section>
 <footer>
     <p class="footer-text">Surrey, BC, Canada</p>
     <a class="footer-item" href="https://www.instagram.com/posterizedkicks/" target="_blank">
         <h3 class="footer-text">INSTAGRAM</h3>
-    
+    </a>
     <p class="footer-text">PosterizedKicks Copyright 2023</p>
 </footer>
 </body>

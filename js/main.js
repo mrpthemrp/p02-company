@@ -1,23 +1,3 @@
-// let slideIndex = 0;
-// showSlides();
-//
-// function showSlides() {
-//     let i;
-//     if(slideIndex === 0){document.getElementsByClassName("carousel-item")[0].style.display = "block"}
-//     let slides = document.getElementsByClassName("carousel-item");
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}
-//     slides[slideIndex-1].style.display = "block";
-//     setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
-// 'use strict';
-//
-// // FSM VARIABLES
-// let state = 0;
-
 // MENU THINGS
 function menuToggle() {
     let menuOverlay = document.querySelector('#menuOverlay');
@@ -85,4 +65,33 @@ function clearRating(starContainer) {
         let starImgID = document.getElementById(starDivID).firstElementChild.id;
         toggleStarToOutline(starImgID);
     }
+}
+
+let counter = 1;
+function carouselNext(){
+    let oldId = "update"+counter.toString();
+    let id;
+    if(counter === 3){
+        id = "update1";
+        counter = 0;
+    } else {
+        id = "update" + (counter + 1).toString();
+    }
+    document.getElementById(oldId).classList.toggle("carousel-item");
+    document.getElementById(id).classList.toggle("carousel-item");
+    counter++;
+}
+
+function carouselPrev(){
+    let oldId = "update"+counter.toString();
+    let id;
+    if(counter === 1){
+        id = "update3";
+        counter = 4;
+    } else {
+        id = "update" + (counter - 1).toString();
+    }
+    document.getElementById(oldId).classList.toggle("carousel-item");
+    document.getElementById(id).classList.toggle("carousel-item");
+    counter--;
 }
