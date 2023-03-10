@@ -1260,6 +1260,18 @@ textarea {
     .hero-text {
         width: 25em;
     }
+
+    .about-form{
+        width: 70vw;
+    }
+
+    .checkout-form{
+        width: 60vw;
+    }
+
+    .checkout-form input,textarea{
+        width: 38vw;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -1281,6 +1293,11 @@ textarea {
     /* END OF FOOTER */
     .hero-text {
         width: 20em;
+    }
+
+    .about-section video{
+        max-width: 90vw;
+        height: auto;
     }
 }
 
