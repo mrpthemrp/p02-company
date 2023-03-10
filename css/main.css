@@ -358,11 +358,12 @@ select {
 .container-posters {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding-bottom: 2em;
     padding-top: 2em;
-    margin-left: 18.2em;
+    max-width: 100rem;
+    align-items: center;
 }
 
 .container-customize {
@@ -791,15 +792,14 @@ footer ul {
 }
 
 .sidebar {
-    position: absolute;
+    position: sticky;
     top: 8em;
     left: 0;
     width: 18em;
     height: 40rem;
     display: flex;
     flex-direction: column;
-    padding: 20px 5px 0px 20px;
-    z-index: 100;
+    z-index: 2;
     margin-right: 2em;
     padding-left: 2em;
 }
@@ -1225,6 +1225,7 @@ textarea {
 
 /* // END OF Updates and Events */
 
+
 /* // END OF INDEX */
 
 /* MEDIA QUERIES */
@@ -1278,8 +1279,6 @@ textarea {
     }
 
     /* END OF FOOTER */
-
-
     .hero-text {
         width: 20em;
     }
@@ -1297,6 +1296,10 @@ textarea {
 
     .hero-text {
         width: 15em;
+    }
+
+    .container-posters {
+        transform: scalex(0.9);
     }
 }
 
