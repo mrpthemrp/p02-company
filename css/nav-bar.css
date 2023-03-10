@@ -96,7 +96,7 @@
         bottom: 0;
         right: 0;
         background-color: var(--white-bkdg);
-        overflow-y: scroll;
+        overflow-y: hidden;
         overflow-x: hidden;
         transition: 0.5s ease-out;
     }
@@ -107,20 +107,29 @@
 
     .menu-inside {
         display: inline-flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 5rem;
         align-content: space-between;
         align-items: flex-start;
         justify-content: space-between;
         flex-wrap: wrap;
         width: max-content;
-        gap: 15rem;
     }
 
     #menu-middle {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .menu {
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
     }
 }
 
