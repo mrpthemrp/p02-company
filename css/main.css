@@ -498,6 +498,7 @@ header p {
     border-radius: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 2em;
+    width: 70vw;
 }
 
 .cart-items {
@@ -1274,6 +1275,13 @@ textarea {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .flex-row{
+        gap:10rem;
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 700px) {
     /* FOOTER */
     footer {
@@ -1299,6 +1307,10 @@ textarea {
         max-width: 90vw;
         height: auto;
     }
+
+    #total-price{
+        gap: 7rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1317,6 +1329,9 @@ textarea {
 
     .container-posters {
         transform: scalex(0.9);
+    }
+    .flex-row{
+        gap: 3rem;
     }
 }
 
